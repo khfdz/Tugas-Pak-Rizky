@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+
+        .warna{
+            background-color: #189a5a;
+            background-color: #00a757;
+            background-color: #0e0c9b;
+            background-color: #00a65a;
+        }
+
+
+        .navMenu {
+            background-color: #01ac5d;
+            height: 150px;
+            font-size: 70px;
+            align-items: center;
+            justify-content: left;
+            display: flex;
+            color: white;
+            padding-left: 80px;
+            border-right: 8px solid white;
+        }
+
+        .logoManulife {
+            background-image: url('./gambar/manulife.png'); 
+            background-repeat: no-repeat;
+            background-size: contain; 
+            display: inline-block;
+            padding-left: 130px; /* Sesuaikan jarak antara tulisan dan gambar */
+        }
+
+        .navPutih {
+            background-color: white;
+            display: flex;
+            color: white;
+        }
+
+        .navFact {
+            background-color: #283890;
+            font-size: 70px;
+            font-weight: 350;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            color: white;
+        }
+
+        .manuDana {
+            margin-top: 20px;
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        .des2023 {
+            margin-top: 20px;
+            border: 4px solid green;
+            padding: 10px;
+            width: 11%;
+            font-size: 16px;
+            font-weight: 800;
+        }
+
+        .tujuanInvest {
+            margin-left: -10px;
+            margin-top: 20px;
+            justify-content: left;
+            display: flex;
+            color: #ed7717;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+          .garis {
+            margin-left: -10px;
+            border-top: 5px solid #189a5a;
+            width: 92%; 
+            margin-top: 0px; 
+        }
+
+        .klasiRisiko{
+            margin-top: 20px;
+            justify-content: left;
+            display: flex;
+            color: #ed7717;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .garis2 {
+            border-top: 5px solid #189a5a;
+            width: 102%; 
+            margin-top: 0px;
+        }
+
+        .garisAlokasi {
+            border-top: 5px solid green;
+            width: 102%; 
+            margin-top: -15px;
+        }
+
+        .garisKeterangan {
+            border-top: 5px solid green;
+            width: 205%; 
+            margin-top: 0px;
+        }
+
+        .garisPanjang1 {
+            margin-left: -10px;
+            border-top: 5px solid green;
+            width: 103.7%; 
+            margin-top: 0px; 
+        }
+
+        .garisPanjang2 {
+            margin-left: -10px;
+            border-top: 5px solid green;
+            width: 105%; 
+            margin-top: 0px; 
+        }
+
+        .garisFull {
+            border-top: 5px solid green;
+            width: 130%; 
+            display: flex;
+        }
+
+        .tujuan-text {
+            margin-left: -10px;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-top: -10px; /* Atur margin atas sesuai kebutuhan */
+            text-align: justify; /* Menyesuaikan teks menjadi rata kanan-kiri */
+            width: 90%;
+        }
+
+        .risiko-text {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-top: -10px; /* Atur margin atas sesuai kebutuhan */
+            text-align: justify; /* Menyesuaikan teks menjadi rata kanan-kiri */
+            width: 102%;
+        }
+        
+        .table {
+            margin-left: -15px;
+            margin-top: -20px;
+            width: 70%; /* Mengatur panjang tabel */
+        }
+
+        .table td {
+            text-align: left; /* Mengatur teks berada di sebelah kiri */
+        }
+
+        .infoKolom1 {
+            width: 10px; /* Atur lebar kolom ":" sesuai kebutuhan */
+        }
+
+        .infoKolom2 {
+            width: 10px; /* Atur lebar kolom ":" sesuai kebutuhan */
+            text-align: left;
+        }
+
+        .infoKolom3 {
+            width: 50%; /* Atur lebar kolom tanggal sesuai kebutuhan */
+        }
+
+        .alokasi1{
+            margin-top: 20px;
+            justify-content: left;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .alokasi1 p {
+            margin-left: 0; /* Mengatur margin agar "Alokasi" tidak terlalu ke kiri */
+            margin-right: 200px; 
+        }
+
+        .alokasi2{
+            margin-left: 10px;
+            margin-top: 20px;
+            justify-content: left;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .tabelAlokasi,
+        .tabelPortofolio {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .tabelPortofolio {
+             margin-left: 85px; /* Atur jarak geser ke kanan sesuai kebutuhan */
+        }
+
+        .keterangan {
+            margin-top: 20px;
+            justify-content: left;
+            display: flex;
+        }
+
+        .pketerangan {
+            width: 205%;
+            text-align: justify;
+        }
+
+        .textTengah {
+            margin-bottom: 0px;
+        }
+
+        .logoWebsite {
+            background-image: url('./gambar/website.png'); 
+            background-repeat: no-repeat;
+            background-size: contain; 
+            display: inline-block;
+            padding-left: 5px; 
+            width: 100%;
+            height: 70%;
+        }
+
+        .textFooter {
+            margin-top: 2px;
+            margin-left: 5px;
+            font-size: 16px;
+            display: flex;
+            text-decoration: none;
+            display: inline-block;
+            color: #0cb361;
+            font-weight: 400;
+        }
+
+        .logoFacebook {
+            background-image: url('./gambar/facebook.png'); 
+            background-repeat: no-repeat;
+            background-size: contain; 
+            display: inline-block;
+            padding-left: 5px; 
+            width: 100%;
+            height: 70%;
+        }
+
+        .logoTwitter {
+            background-image: url('./gambar/twitter.png'); 
+            background-repeat: no-repeat;
+            background-size: contain; 
+            display: inline-block;
+            padding-left: 5px; 
+            width: 100%;
+            height: 70%;
+        }
+
+        .logoInstagram {
+            background-image: url('./gambar/instagram.png'); 
+            background-repeat: no-repeat;
+            background-size: contain; 
+            display: inline-block;
+            padding-left: 5px; 
+            width: 100%;
+            height: 70%;
+        }
+
+        .logoYoutube {
+            background-image: url('./gambar/youtube.png'); 
+            background-repeat: no-repeat;
+            background-size: contain; 
+            display: inline-block;
+            padding-left: 5px; 
+            width: 100%;
+            height: 70%;
+        }
+        
+    </style>
+</head>
+<body>
+
+<!----------------------------------------MANULIFE dan FACT SHEET------------------------------------->
+<div class="container text-center">
+    <div class="row">
+        <div class="col-md-8 navMenu">
+            <span class="logoManulife">Manulife<p class="garisPemisah"></p></span>
+        </div>
+        <div class="col-md-4 navFact">
+            FACT SHEET
+        </div>
+    </div>
+</div>
+
+
+<!----------------------------------------MANULIFE dan FACT SHEET------------------------------------->
+
+
+<!-------------------------------------MANULIFE DANA BERIMBANG dan TANGGAL---------------------------->
+      <div class="container text-center">
+        <div class="row">
+            <div class="col-md-10 manuDana">
+                MANULIFE DANA BERIMBANG
+            </div>
+            <div class="col-md-2 des2023">
+                DES 2023
+            </div>
+        </div>
+      </div>
+<!-------------------------------------MANULIFE DANA BERIMBANG dan TANGGAL---------------------------->
+
+
+<!------------------------------TUJUAN INVESTASI dan KLASIFIKASI RISIKO------------------------------->
+      <div class="container text-center">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="tujuanInvest">
+                    Tujuan Investasi
+                </div>
+                <p class="garis">
+                <p class="tujuan-text"></p>
+            </div>
+            <div class="col-md-6">
+                <div class="klasiRisiko">
+                    Klasifikasi Risiko
+                </div>
+                <p class="garis2">
+                <p class="risiko-text"></p>
+            </div>
+        </div>
+    </div>
+<!------------------------------TUJUAN INVESTASI dan KLASIFIKASI RISIKO------------------------------->
+
+
+<!-------------------------INFORMASI DANA dan ALOKASI PORTOFOLIO KETERANGAN--------------------------->
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="tujuanInvest">
+                    Informasi Dana
+                </div>
+                <hr class="garis">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td class="infoKolom1">Tanggal Peluncuran</td>
+                            <td class="infoKolom2">:</td>
+                            <td class="infoKolom3">9 Juli 2007</td>
+                        </tr>
+                        <tr>
+                            <td class="infoKolom1">Tanggal Peluncuran</td>
+                            <td class="infoKolom2">:</td>
+                            <td class="infoKolom3">9 Juli 2007</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-md-6">
+                <div class="alokasi1">
+                    <p>Alokasi</p>
+                    <p>Portofolio</p>
+                </div>
+                <hr class="garisAlokasi">
+                <div class="alokasi2">
+                    <table class="table tabelAlokasi">
+                        <tbody>
+                            <tr>
+                                <td class="infoKolom1">Alokasi</td>
+                                <td class="infoKolom2">:</td>
+                                <td class="infoKolom3">Nilai Alokasi</td>
+                            </tr>
+                            <tr>
+                                <td class="infoKolom1">Alokasi</td>
+                                <td class="infoKolom2">:</td>
+                                <td class="infoKolom3">Nilai Alokasi</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+                    <table class="table tabelPortofolio">
+                        <tbody>
+                            <tr>
+                                <td class="infoKolom1">Portofolio</td>
+                                <td class="infoKolom2">:</td>
+                                <td class="infoKolom3">Nilai Portofolio</td>
+                            </tr>
+                            <tr>
+                                <td class="infoKolom1">Portofolio</td>
+                                <td class="infoKolom2">:</td>
+                                <td class="infoKolom3">Nilai Portofolio</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="keterangan">
+                        Keterangan
+                    </div>
+                <hr class="garisKeterangan">
+                <p class="pketerangan">1. Kinerja disetahunkan (1 tahun = 365 hari) dan menggunakan metode compounding/majemuk (khusus untuk
+                    produk yang telah berumur lebih dari setahun sejak Tanggal Peluncuran)</p>
+                    <p class="pketerangan">1. Kinerja disetahunkan (1 tahun = 365 hari) dan menggunakan metode compounding/majemuk (khusus untuk
+                        produk yang telah berumur lebih dari setahun sejak Tanggal Peluncuran)</p>
+                        
+        </div>
+    </div>
+<!-------------------------INFORMASI DANA dan ALOKASI PORTOFOLIO KETERANGAN--------------------------->
+                
+<!-----------------------------KINERJA DILUNCURKAN dan KINERJA BULANAN-------------------------------->
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="kinerjaSejak">
+                    Kinerja Sejak Diluncurkan
+                </div>
+                <hr class="garisPanjang1">
+                <p class="tujuan-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores odio, assumenda distinctio praesentium sint, dignissimos ducimus tempora voluptas, sequi qui quidem! Repudiandae delectus at placeat recusandae distinctio veniam beatae consectetur.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="KinerjaBulanan">
+                    Kinerja Bulanan dalam 3 Tahun Terakhir
+                </div>
+                <hr class="garisPanjang2">
+                <p class="risiko-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores odio, assumenda distinctio praesentium sint, dignissimos ducimus tempora voluptas, sequi qui quidem! Repudiandae delectus at placeat recusandae distinctio veniam beatae consectetur.</p>
+            </div>
+        </div>
+    </div>
+<!-----------------------------KINERJA DILUNCURKAN dan KINERJA BULANAN-------------------------------->
+
+<!------------------------------------------KINERJA DANA---------------------------------------------->
+    <p class="textTengah">Kinerja Dana</p>
+    <hr class="garisFull">
+
+    <div class="container text-center">
+            <div class="row">
+                <div class="col-md-6">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td class="kinerjaKolom1">Kinerja dalam IDR per (29/12/23)</td>
+                            </tr>
+                            <tr>
+                                <td class="kinerjaKolom3"></td>
+                                <td class="kinerjaKolom1">1 Bulan</td>
+                                <td class="kinerjaKolom2">3 Bulan</td>
+                                <td class="kinerjaKolom3">6 Bulan</td>
+                                <td class="kinerjaKolom3">Tahun Berjalan</td>
+                                <td class="kinerjaKolom3">1 Thn</td>
+                                <td class="kinerjaKolom3">3 Thn</td>
+                                <td class="kinerjaKolom3">5 Thn</td>
+                                <td class="kinerjaKolom3">Sejak Diluncurkan</td>
+                            </tr>
+                            <tr>
+                                <td class="kinerjaKolom3">MDB</td>
+                                <td class="kinerjaKolom1">1.76%</td>
+                                <td class="kinerjaKolom2">1.76%</td>
+                                <td class="kinerjaKolom3">1.76%</td>
+                                <td class="kinerjaKolom3">1.76%</td>
+                                <td class="kinerjaKolom3">1.76%</td>
+                                <td class="kinerjaKolom3">1.76%</td>
+                                <td class="kinerjaKolom3">1.76%</td>
+                                <td class="kinerjaKolom3">1.76%</td>
+                            </tr>
+                            <tr>
+                                <td class="kinerjaKolom3">MDB</td>
+                                <td class="kinerjaKolom1">1.76%</td>
+                                <td class="kinerjaKolom2">1.76%</td>
+                                <td class="kinerjaKolom3">1.76%</td>
+                                <td class="kinerjaKolom3">1.76%</td>
+                                <td class="kinerjaKolom3">1.76%</td>
+                                <td class="kinerjaKolom3">1.76%</td>
+                                <td class="kinerjaKolom3">1.76%</td>
+                                <td class="kinerjaKolom3">1.76%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-md-6">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td class="kinerjaKolom1">Kinerja dalam IDR per (29/12/23)</td>
+                                </tr>
+                                <tr>
+                                    <td class="kinerjaKolom3"></td>
+                                    <td class="kinerjaKolom1">1 Bulan</td>
+                                    <td class="kinerjaKolom2">3 Bulan</td>
+                                    <td class="kinerjaKolom3">6 Bulan</td>
+                                    <td class="kinerjaKolom3">Tahun Berjalan</td>
+                                    <td class="kinerjaKolom3">1 Thn</td>
+                                    <td class="kinerjaKolom3">3 Thn</td>
+                                    <td class="kinerjaKolom3">5 Thn</td>
+                                    <td class="kinerjaKolom3">Sejak Diluncurkan</td>
+                                </tr>
+                                <tr>
+                                    <td class="kinerjaKolom3">MDB</td>
+                                    <td class="kinerjaKolom1">1.76%</td>
+                                    <td class="kinerjaKolom2">1.76%</td>
+                                    <td class="kinerjaKolom3">1.76%</td>
+                                    <td class="kinerjaKolom3">1.76%</td>
+                                    <td class="kinerjaKolom3">1.76%</td>
+                                    <td class="kinerjaKolom3">1.76%</td>
+                                    <td class="kinerjaKolom3">1.76%</td>
+                                    <td class="kinerjaKolom3">1.76%</td>
+                                </tr>
+                                <tr>
+                                    <td class="kinerjaKolom3">MDB</td>
+                                    <td class="kinerjaKolom1">1.76%</td>
+                                    <td class="kinerjaKolom2">1.76%</td>
+                                    <td class="kinerjaKolom3">1.76%</td>
+                                    <td class="kinerjaKolom3">1.76%</td>
+                                    <td class="kinerjaKolom3">1.76%</td>
+                                    <td class="kinerjaKolom3">1.76%</td>
+                                    <td class="kinerjaKolom3">1.76%</td>
+                                    <td class="kinerjaKolom3">1.76%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+            </div>
+        </div>
+<!------------------------------------------KINERJA DANA---------------------------------------------->
+
+<!----------------------Kepemilikan Terbesar* Sektor Alokasi------------------------------------------>
+<p class="textTengah">Kepemilikan Terbesar* & Sektor Alokasi</p>
+    <hr class="garisFull">
+    
+<div class="container text-center">
+    <div class="row">
+        <div class="col-md-3">
+            <p class="tujuan-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores odio, assumenda distinctio praesentium sint, dignissimos ducimus tempora voluptas, sequi qui quidem! Repudiandae delectus at placeat recusandae distinctio veniam beatae consectetur.</p>
+        </div>
+        <div class="col-md-3">
+            <p class="risiko-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores odio, assumenda distinctio praesentium sint, dignissimos ducimus tempora voluptas, sequi qui quidem! Repudiandae delectus at placeat recusandae distinctio veniam beatae consectetur.</p>
+        </div>
+        <div class="col-md-3">
+            <p class="risiko-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores odio, assumenda distinctio praesentium sint, dignissimos ducimus tempora voluptas, sequi qui quidem! Repudiandae delectus at placeat recusandae distinctio veniam beatae consectetur.</p>
+        </div>
+        <div class="col-md-3">
+            <p class="risiko-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores odio, assumenda distinctio praesentium sint, dignissimos ducimus tempora voluptas, sequi qui quidem! Repudiandae delectus at placeat recusandae distinctio veniam beatae consectetur.</p>
+        </div>
+    </div>
+</div>
+<!----------------------Kepemilikan Terbesar* Sektor Alokasi------------------------------------------>
+
+<!----------------------------------Ulasan Manajer Investasi------------------------------------------>
+<p class="textTengah">Ulasan Manajer Investasi</p>
+    <hr class="garisFull">
+    
+<div class="container text-center">
+    <div class="row">
+        <div class="col-md-12">
+            <p class="textUlasan">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores odio, assumenda distinctio praesentium sint, dignissimos ducimus tempora voluptas, sequi qui quidem! Repudiandae delectus at placeat recusandae distinctio veniam beatae consectetur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores odio, assumenda distinctio praesentium sint, dignissimos ducimus tempora voluptas, sequi qui quidem! Repudiandae delectus at placeat recusandae distinctio veniam beatae consectetur.</p>
+        </div>
+<!----------------------------------Ulasan Manajer Investasi------------------------------------------>
+
+<!------------------------------------------Sanggahan------------------------------------------------->
+<hr class="garisFull">
+    
+<div class="container text-center">
+    <div class="row">
+        <div class="col-md-12">
+            <p class="textSanggahan">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores odio, assumenda distinctio praesentium sint, dignissimos ducimus tempora voluptas, sequi qui quidem! Repudiandae delectus at placeat recusandae distinctio veniam beatae consectetur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores odio, assumenda distinctio praesentium sint, dignissimos ducimus tempora voluptas, sequi qui quidem! Repudiandae delectus at placeat recusandae distinctio veniam beatae consectetur.</p>
+
+            <p class="textManulife">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores odio, assumenda distinctio praesentium sint, dignissimos ducimus tempora voluptas, sequi qui quidem! Repudiandae delectus at placeat recusandae distinctio veniam beatae consectetur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores odio, assumenda distinctio praesentium sint, dignissimos ducimus tempora voluptas, sequi qui quidem! Repudiandae delectus at placeat recusandae distinctio veniam beatae consectetur.</p>
+        </div>
+<!------------------------------------------Sanggahan------------------------------------------------->
+
+<hr class="garisFull">
+<div class="row">
+    <div class="col-md-1"></div>
+  <div class="col-md-2">
+    <a href="http://www.manulife.co.id" class="logoWebsite"><p class="textFooter">www.manulife.co.id</p></a>
+  </div>
+    <div class="col-md-2">
+        <a href="https://www.facebook.com/ManulifeIndonesia" class="logoFacebook"><p class="textFooter">Manulife Indonesia</p></a>
+    </div>
+    <div class="col-md-2">
+        <a href="https://twitter.com/Manulife_ID" class="logoTwitter"><p class="textFooter">Manulife Indonesia</p></a>
+    </div>
+    <div class="col-md-2">
+        <a href="https://www.instagram.com/manulife_id/" class="logoInstagram"><p class="textFooter">Manulife Indonesia</p></a>
+    </div>
+    <div class="col-md-2">
+        <a href="https://www.youtube.com/user/mlividindonesia" class="logoYoutube"><p class="textFooter">Manulife Indonesia</p></a>
+    </div>
+  </div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<script>
+    // Load the JSON file
+    fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+            // Access the 'tujuan' and 'risiko' values from the JSON
+            const tujuan = data.tujuan;
+            const risiko = data.risiko;
+
+            // Select the HTML elements by their class names and set their innerHTML to the values from the JSON
+            document.querySelector('.tujuan-text').innerHTML = tujuan;
+            document.querySelector('.risiko-text').innerHTML = risiko;
+        })
+        .catch(error => console.error('Error loading JSON:', error));
+</script>
+</body>
+</html>

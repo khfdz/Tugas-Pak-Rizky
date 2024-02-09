@@ -1,0 +1,37 @@
+{
+    "tujuan": "Bertujuan untuk mendapatkan pertumbuhan investasi yang tinggi dalam jangka panjang dengan menginvestasikan dananya pada instrumen pasar uang, efek pendapatan tetap termasuk obligasi pemerintah dan BUMN, dan saham publik di Indonesia.",
+    "risiko": "Klasifikasi risiko ditetapkan berdasarkan jenis dana.",
+    "informasiDana": {
+        "tanggal_peluncuran": "9 Jul 07",
+        "harga_peluncuran": "IDR 1,000.00",
+        "jumlah_dana_kelolaan": "RP 138.95 miliar",
+        "jumlah_unit_penyertaan": "57,582,818.76",
+        "nilai_aktiva_bersih_per_unit": "IDR 2,413.08",
+        "mata_uang": "IDR",
+        "jenis_dana": "Campuran",
+        "valuasi": "Harian",
+        "bank_kustodian": "Bank DBS Indonesia",
+        "biaya_jasa_pengelolaan_mi": "2.00%",
+        "kode_bloomberg": "MLLDBBG IJ",
+        "manajer_investasi": "PT Manulife Aset Manajemen Indonesia"
+    },
+    "alokasi": {
+        "saham": "40-60%",
+        "obligasi": "40-60%",
+        "pasar_uang": "0-20%"
+    },
+    "portofolio": {
+        "saham": "44.06%",
+        "obligasi_pemerintah": "52.32%",
+        "pasar_korporasi": "0.00%",
+        "pasar_uang": "3.62%"
+    },
+    "keterangan": {
+        "satu": "1) Kinerja disetahunkan (1 tahun = 365 hari) dan menggunakan metode compounding/majemuk (khusus untuk produk yang berumur lebih dari setahun sejah Tanggal Peluncuran).",
+        "dua": "2) Parameter yang digunakan adalah 50% IHSG + 50% BINDO Index.",
+        "tiga": "3) Berdasarkan GICS (Global Industrials Classification Standard).",
+        "empat": "4) Nilai Aktiva Bersih/Unit sudah memperhitungkan biaya-biaya, diantaranya biaya yang terkait dengan transaksi dan penyelesaian transaksi serta administrasi dan pencatatan."
+    }
+    
+
+}
