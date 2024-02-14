@@ -77,13 +77,66 @@
             margin-top: 0px; 
         }
 
-        .klasiRisiko{
+        .garisInformasi {
+            margin-left: -10px;
+            border-top: 5px solid #189a5a;
+            width: 92%; 
+            margin-top: 0px; 
+            margin-bottom: 20px;
+        }
+
+        .klasiRisiko {
             margin-top: 20px;
             justify-content: left;
             display: flex;
             color: #ed7717;
             font-weight: bold;
             font-size: 18px;
+        }
+
+        .risikoAtas {
+            display: flex; 
+            justify-content: space-around; 
+            margin-bottom: -15px;
+        }
+
+        .rendah {
+            margin-left: -510px;
+        }
+
+        .sedang {
+            display: flex;
+            margin-left: 10px;
+            position: absolute;
+        }
+
+        .tinggi {
+            margin-left: 520px;
+            position: absolute;
+        }
+
+        .risikoBawah {
+            display: flex; 
+            justify-content: space-around; 
+        }
+
+        .pasar {
+            margin-left: -500px;
+        }
+
+        .tetap {
+            margin-left: -250px;
+            position: absolute;
+        }
+
+        .campuran {
+            margin-left: 110px;
+            position: absolute;
+        }
+
+        .saham {
+            margin-left: 520px;
+            position: absolute;
         }
 
         .garis2 {
@@ -93,82 +146,156 @@
         }
 
         .garisAlokasi {
-            border-top: 5px solid green;
+            border-top: 5px solid #189a5a;
             width: 102%; 
             margin-top: -15px;
         }
 
         .garisKeterangan {
-            border-top: 5px solid green;
+            border-top: 5px solid #189a5a;
             width: 205%; 
             margin-top: 0px;
         }
 
         .garisPanjang1 {
             margin-left: -10px;
-            border-top: 5px solid green;
-            width: 103.7%; 
+            border-top: 5px solid #189a5a;
+            width: 105%; 
             margin-top: 0px; 
         }
 
         .garisPanjang2 {
             margin-left: -10px;
-            border-top: 5px solid green;
+            border-top: 5px solid #189a5a;
             width: 105%; 
             margin-top: 0px; 
         }
 
         .garisFull {
-            border-top: 5px solid green;
+            border-top: 5px solid #189a5a;
             width: 130%; 
             display: flex;
+            margin-bottom: 20px;
         }
 
-        .tujuan-text {
+        .tujuanText {
             margin-left: -10px;
             font-size: 16px;
             line-height: 1.6;
-            margin-top: -10px; /* Atur margin atas sesuai kebutuhan */
-            text-align: justify; /* Menyesuaikan teks menjadi rata kanan-kiri */
-            width: 90%;
+            margin-top: -10px;
+            text-align: justify; 
+            width: 92%;
         }
 
-        .risiko-text {
+        .risikoText {
             font-size: 16px;
             line-height: 1.5;
             margin-top: -10px; /* Atur margin atas sesuai kebutuhan */
             text-align: justify; /* Menyesuaikan teks menjadi rata kanan-kiri */
             width: 102%;
         }
-        
+
+        .gradient-box {
+            width: 102%;
+            height: 30px; /* Tinggi gradient-box */
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px; 
+            position: relative;
+        }
+
+        .box1 {
+            width: 25%;
+            border-right: 5px solid white;
+            background: linear-gradient(90deg,
+            hsl(129deg 74% 20%) 25%,
+            hsl(101deg 62% 24%) 50%,
+            hsl(90deg 67% 25%) 75%,
+            hsl(83deg 71% 26%) 100%
+            );
+        }
+
+        .box2 {
+            margin-left: 0px;
+            border-right: 5px solid white;
+            width: 25%; /* Lebar masing-masing kotak */
+            background: linear-gradient(90deg,
+            hsl(64deg 76% 29%) 25%,
+            hsl(51deg 85% 38%) 75%
+            );
+        }
+
+        .box3 {
+            margin-left: 0px;
+            border-right: 5px solid white;
+            width: 50%; /* Lebar masing-masing kotak */
+            background: linear-gradient(90deg,
+            hsl(47deg 91% 45%) 16%,
+            hsl(45deg 100% 50%) 32%,
+            hsl(41deg 100% 48%) 48%,
+            hsl(35deg 100% 45%) 64%,
+            hsl(25deg 100% 43%) 80%,
+            hsl(15deg 100% 41%) 100%
+            );
+        }
+
+        .box4 {
+            margin-left: 0px;
+            width: 25%; /* Lebar masing-masing kotak */
+            background: linear-gradient(90deg,
+            hsl(13deg 99% 40%) 33%,
+            hsl(9deg 99% 39%) 66%,
+            hsl(0deg 99% 38%) 100%
+            );
+        }
+
+        .segitiga {
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 30px solid white; 
+            position: absolute;
+            margin-top: -30px;
+            margin-left: 360px;
+            }
+
         .table {
             margin-left: -15px;
             margin-top: -20px;
-            width: 70%; /* Mengatur panjang tabel */
+            width: 100%; /* Mengatur panjang tabel */
         }
 
         .table td {
             text-align: left; /* Mengatur teks berada di sebelah kiri */
+            border: none;
         }
 
         .infoKolom1 {
-            width: 10px; /* Atur lebar kolom ":" sesuai kebutuhan */
+            width: 31%; /* Atur lebar kolom ":" sesuai kebutuhan */
         }
 
         .infoKolom2 {
-            width: 10px; /* Atur lebar kolom ":" sesuai kebutuhan */
+            width: 1%; /* Atur lebar kolom ":" sesuai kebutuhan */
             text-align: left;
         }
 
         .infoKolom3 {
-            width: 50%; /* Atur lebar kolom tanggal sesuai kebutuhan */
+            text-align: center;
+            width: 50%; /* Adjust the width as needed */
+            margin-left: 10px; /* Add margin to create space between infoKolom2 and infoKolom3 */
         }
+
 
         .alokasi1{
             margin-top: 20px;
             justify-content: left;
             display: flex;
             justify-content: space-between;
+            color: #ed7717;
+            font-weight: bold;
+            font-size: 18px;
+            margin-right: -15px;
         }
 
         .alokasi1 p {
@@ -191,22 +318,56 @@
         }
 
         .tabelPortofolio {
-             margin-left: 85px; /* Atur jarak geser ke kanan sesuai kebutuhan */
+             margin-left: 85px; 
+        }
+
+        .tabelPortofolio .infoKolom1{
+             width: 100%; 
+             
+        }
+
+        .tabelPortofolio .infoKolom3{
+            margin-left: 30px;
+            display: flex; 
         }
 
         .keterangan {
-            margin-top: 20px;
+            margin-top: -20px;
             justify-content: left;
             display: flex;
+            color: #ed7717;
+            font-weight: bold;
+            font-size: 18px;
         }
 
         .pketerangan {
             width: 205%;
             text-align: justify;
+            margin-top: -10px;
+            /* font-size: 15px; */
         }
 
         .textTengah {
             margin-bottom: 0px;
+        }
+
+        .kinerjaDana {
+            margin-bottom: -1px;
+            color: #ed7717;
+            font-weight: bold;
+            font-size: 18px;  
+        }
+
+        .kinerjaSejak {
+            color: #ed7717;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .kinerjaBulanan {
+            color: #ed7717;
+            font-weight: bold;
+            font-size: 18px;
         }
 
         .logoWebsite {
@@ -294,10 +455,10 @@
       <div class="container text-center">
         <div class="row">
             <div class="col-md-10 manuDana">
-                MANULIFE DANA BERIMBANG
+                
             </div>
             <div class="col-md-2 des2023">
-                DES 2023
+                
             </div>
         </div>
       </div>
@@ -308,18 +469,35 @@
       <div class="container text-center">
         <div class="row">
             <div class="col-md-6">
-                <div class="tujuanInvest">
-                    Tujuan Investasi
-                </div>
+                <div class="tujuanInvest"></div>
+
                 <p class="garis">
-                <p class="tujuan-text"></p>
+                <p class="tujuanText"></p>
             </div>
             <div class="col-md-6">
                 <div class="klasiRisiko">
-                    Klasifikasi Risiko
+
                 </div>
                 <p class="garis2">
-                <p class="risiko-text"></p>
+                <p class="risikoText"></p>
+                <div class="risikoAtas">
+                    <div class="rendah">Rendah</div>
+                    <div class="sedang">Sedang</div>
+                    <div class="tinggi">Tinggi</div>
+                </div>
+                <div class="gradient-box">
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                    <div class="box3"></div>
+                    <div class="box4"></div>
+                </div>
+                <div class="segitiga"></div>
+                <div class="risikoBawah">
+                    <div class="pasar">Pasar Uang</div>
+                    <div class="tetap">Pendapatan Tetap</div>
+                    <div class="campuran">Campuran</div>
+                    <div class="saham">Saham</div>
+                </div>
             </div>
         </div>
     </div>
@@ -330,44 +508,101 @@
     <div class="container text-center">
         <div class="row">
             <div class="col-md-6">
-                <div class="tujuanInvest">
-                    Informasi Dana
+                <div class="tujuanInvest infoDana">
+                  
                 </div>
-                <hr class="garis">
+                <p class="garisInformasi"></p>
                 <table class="table">
                     <tbody>
                         <tr>
-                            <td class="infoKolom1">Tanggal Peluncuran</td>
+
+                            <td class="infoKolom1 tujuan"></td>
                             <td class="infoKolom2">:</td>
-                            <td class="infoKolom3">9 Juli 2007</td>
+                            <td class="infoKolom3 satu"></td>
                         </tr>
                         <tr>
-                            <td class="infoKolom1">Tanggal Peluncuran</td>
+                            <td class="infoKolom1 harga"></td>
                             <td class="infoKolom2">:</td>
-                            <td class="infoKolom3">9 Juli 2007</td>
+                            <td class="infoKolom3 dua"></td>
                         </tr>
+                        <tr>
+                            <td class="infoKolom1 dana"></td>
+                            <td class="infoKolom2">:</td>
+                            <td class="infoKolom3 tiga"></td>
+                        </tr>
+                        <tr>
+                            <td class="infoKolom1 unit"></td>
+                            <td class="infoKolom2">:</td>
+                            <td class="infoKolom3 empat"></td>
+                        </tr>
+                        <tr>
+                            <td class="infoKolom1 nilai"></td>
+                            <td class="infoKolom2">:</td>
+                            <td class="infoKolom3 lima"></td>
+                        </tr>
+                        <tr>
+                            <td class="infoKolom1 mata"></td>
+                            <td class="infoKolom2">:</td>
+                            <td class="infoKolom3 enam"></td>
+                        </tr>
+                        <tr>
+                            <td class="infoKolom1 jenis"></td>
+                            <td class="infoKolom2">:</td>
+                            <td class="infoKolom3 tujuh"></td>
+                        </tr>
+                        <tr>
+                            <td class="infoKolom1 valuasi"></td>
+                            <td class="infoKolom2">:</td>
+                            <td class="infoKolom3 delapan"></td>
+                        </tr>
+                        <tr>
+                            <td class="infoKolom1 kustodian"></td>
+                            <td class="infoKolom2">:</td>
+                            <td class="infoKolom3 sembilan"></td>
+                        </tr>
+                        <tr>
+                            <td class="infoKolom1 jasa"></td>
+                            <td class="infoKolom2">:</td>
+                            <td class="infoKolom3 sepuluh"></td>
+                        </tr>
+                        <tr>
+                            <td class="infoKolom1 kode"></td>
+                            <td class="infoKolom2">:</td>
+                            <td class="infoKolom3 sebelas"></td>
+                        </tr>
+                        <tr>
+                            <td class="infoKolom1 manajer"></td>
+                            <td class="infoKolom2">:</td>
+                            <td class="infoKolom3 duabelas"></td>
+                        </tr>
+                        
                     </tbody>
                 </table>
             </div>
 
             <div class="col-md-6">
                 <div class="alokasi1">
-                    <p>Alokasi</p>
-                    <p>Portofolio</p>
+                    <p class="judulAlo"></p>
+                    <p class="judulPorto"></p>
                 </div>
-                <hr class="garisAlokasi">
+                <p class="garisAlokasi">
                 <div class="alokasi2">
                     <table class="table tabelAlokasi">
                         <tbody>
                             <tr>
-                                <td class="infoKolom1">Alokasi</td>
+                                <td class="infoKolom1 satu"></td>
                                 <td class="infoKolom2">:</td>
-                                <td class="infoKolom3">Nilai Alokasi</td>
+                                <td class="infoKolom3 satu"></td>
                             </tr>
                             <tr>
-                                <td class="infoKolom1">Alokasi</td>
+                                <td class="infoKolom1 dua"></td>
                                 <td class="infoKolom2">:</td>
-                                <td class="infoKolom3">Nilai Alokasi</td>
+                                <td class="infoKolom3 dua"></td>
+                            </tr>
+                            <tr>
+                                <td class="infoKolom1 tiga"></td>
+                                <td class="infoKolom2">:</td>
+                                <td class="infoKolom3 tiga"></td>
                             </tr>
                         </tbody>
                     </table>
@@ -375,14 +610,24 @@
                     <table class="table tabelPortofolio">
                         <tbody>
                             <tr>
-                                <td class="infoKolom1">Portofolio</td>
+                                <td class="infoKolom1 satu"></td>
                                 <td class="infoKolom2">:</td>
-                                <td class="infoKolom3">Nilai Portofolio</td>
+                                <td class="infoKolom3 satu"></td>
                             </tr>
                             <tr>
-                                <td class="infoKolom1">Portofolio</td>
+                                <td class="infoKolom1 dua"></td>
                                 <td class="infoKolom2">:</td>
-                                <td class="infoKolom3">Nilai Portofolio</td>
+                                <td class="infoKolom3 dua"></td>
+                            </tr>
+                            <tr>
+                                <td class="infoKolom1 tiga"></td>
+                                <td class="infoKolom2">:</td>
+                                <td class="infoKolom3 tiga"></td>
+                            </tr>
+                            <tr>
+                                <td class="infoKolom1 empat"></td>
+                                <td class="infoKolom2">:</td>
+                                <td class="infoKolom3 empat"></td>
                             </tr>
                         </tbody>
                     </table>
@@ -390,13 +635,11 @@
 
                 <div class="col-md-6">
                     <div class="keterangan">
-                        Keterangan
+                        
                     </div>
-                <hr class="garisKeterangan">
-                <p class="pketerangan">1. Kinerja disetahunkan (1 tahun = 365 hari) dan menggunakan metode compounding/majemuk (khusus untuk
-                    produk yang telah berumur lebih dari setahun sejak Tanggal Peluncuran)</p>
-                    <p class="pketerangan">1. Kinerja disetahunkan (1 tahun = 365 hari) dan menggunakan metode compounding/majemuk (khusus untuk
-                        produk yang telah berumur lebih dari setahun sejak Tanggal Peluncuran)</p>
+                <p class="garisKeterangan">
+                <p class="pketerangan"></p>
+                    
                         
         </div>
     </div>
@@ -407,16 +650,16 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="kinerjaSejak">
-                    Kinerja Sejak Diluncurkan
+                    
                 </div>
-                <hr class="garisPanjang1">
+                <p class="garisPanjang1">
                 <p class="tujuan-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores odio, assumenda distinctio praesentium sint, dignissimos ducimus tempora voluptas, sequi qui quidem! Repudiandae delectus at placeat recusandae distinctio veniam beatae consectetur.</p>
             </div>
             <div class="col-md-6">
-                <div class="KinerjaBulanan">
-                    Kinerja Bulanan dalam 3 Tahun Terakhir
+                <div class="kinerjaBulanan">
+                   
                 </div>
-                <hr class="garisPanjang2">
+                <p class="garisPanjang2">
                 <p class="risiko-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores odio, assumenda distinctio praesentium sint, dignissimos ducimus tempora voluptas, sequi qui quidem! Repudiandae delectus at placeat recusandae distinctio veniam beatae consectetur.</p>
             </div>
         </div>
@@ -424,8 +667,8 @@
 <!-----------------------------KINERJA DILUNCURKAN dan KINERJA BULANAN-------------------------------->
 
 <!------------------------------------------KINERJA DANA---------------------------------------------->
-    <p class="textTengah">Kinerja Dana</p>
-    <hr class="garisFull">
+    <p class="kinerjaDana"></p>
+    <p class="garisFull">
 
     <div class="container text-center">
             <div class="row">
@@ -593,12 +836,107 @@
         .then(response => response.json())
         .then(data => {
             // Access the 'tujuan' and 'risiko' values from the JSON
-            const tujuan = data.tujuan;
-            const risiko = data.risiko;
+            const manulifeDana = data.judul;
+            const tgl = data.tanggal;
+            const judulTujuan = data.tujuanJudul;
+            const tujuan = data.tujuanText;
+            const judulKlasi = data.risikoJudul;
+            const risiko = data.risikoText;
+
+            const informasiDana = data.informasiDana;
+            const kolomKiri = informasiDana.kolomKiri;
+            const kolomKanan = informasiDana.kolomKanan;
+
+            const alokasiDana = data.alokasi;
+            const kolomKiri1 = alokasiDana.kolomKiri;
+            const kolomKanan1 = alokasiDana.kolomKanan;
+
+            const porto = data.portofolio;
+            const kolomKiri2 = porto.kolomKiri;
+            const kolomKanan2 = porto.kolomKanan;
+
+            const ket = data.keterangan;
+            const ketText = ket.keteranganText;
+
+            const sejak = data.kinerjaAwal;
+            const judulSejak = sejak.judul;
+
+            const bulanan = data.kinerjaBulanan;
+            const judulBulanan = bulanan.judul;
+
+            const dana = data.kinerjaDana;
+            const judulDana = dana.judul;
+
+
+
+ 
 
             // Select the HTML elements by their class names and set their innerHTML to the values from the JSON
-            document.querySelector('.tujuan-text').innerHTML = tujuan;
-            document.querySelector('.risiko-text').innerHTML = risiko;
+            document.querySelector('.manuDana').innerHTML = manulifeDana;
+            document.querySelector('.des2023').innerHTML = tgl;
+            document.querySelector('.tujuanInvest').innerHTML = judulTujuan;
+            document.querySelector('.tujuanText').innerHTML = tujuan;
+            document.querySelector('.klasiRisiko').innerHTML = judulKlasi;
+            document.querySelector('.risikoText').innerHTML = risiko;
+
+            document.querySelector('.tujuanInvest.infoDana').innerHTML = informasiDana.judul;
+            document.querySelector('.infoKolom1.tujuan').innerHTML = kolomKiri.satu;
+            document.querySelector('.infoKolom1.harga').innerHTML = kolomKiri.dua;
+            document.querySelector('.infoKolom1.dana').innerHTML = kolomKiri.tiga;
+            document.querySelector('.infoKolom1.unit').innerHTML = kolomKiri.empat;
+            document.querySelector('.infoKolom1.nilai').innerHTML = kolomKiri.lima;
+            document.querySelector('.infoKolom1.mata').innerHTML = kolomKiri.enam;
+            document.querySelector('.infoKolom1.jenis').innerHTML = kolomKiri.tujuh;
+            document.querySelector('.infoKolom1.valuasi').innerHTML = kolomKiri.delapan;
+            document.querySelector('.infoKolom1.kustodian').innerHTML = kolomKiri.sembilan;
+            document.querySelector('.infoKolom1.jasa').innerHTML = kolomKiri.sepuluh;
+            document.querySelector('.infoKolom1.kode').innerHTML = kolomKiri.sebelas;
+            document.querySelector('.infoKolom1.manajer').innerHTML = kolomKiri.duabelas;
+
+            document.querySelector('.infoKolom3.satu').innerHTML = kolomKanan.satu;
+            document.querySelector('.infoKolom3.dua').innerHTML = kolomKanan.dua;
+            document.querySelector('.infoKolom3.tiga').innerHTML = kolomKanan.tiga;
+            document.querySelector('.infoKolom3.empat').innerHTML = kolomKanan.empat;
+            document.querySelector('.infoKolom3.lima').innerHTML = kolomKanan.lima;
+            document.querySelector('.infoKolom3.enam').innerHTML = kolomKanan.enam;
+            document.querySelector('.infoKolom3.tujuh').innerHTML = kolomKanan.tujuh;
+            document.querySelector('.infoKolom3.delapan').innerHTML = kolomKanan.delapan;
+            document.querySelector('.infoKolom3.sembilan').innerHTML = kolomKanan.sembilan;
+            document.querySelector('.infoKolom3.sepuluh').innerHTML = kolomKanan.sepuluh;
+            document.querySelector('.infoKolom3.sebelas').innerHTML = kolomKanan.sebelas;
+            document.querySelector('.infoKolom3.duabelas').innerHTML = kolomKanan.duabelas;
+            
+            document.querySelector('.judulAlo').innerHTML = alokasiDana.judul;
+            document.querySelector('.alokasi2 .infoKolom1.satu').innerHTML = kolomKiri1.satu;
+            document.querySelector('.alokasi2 .infoKolom1.dua').innerHTML = kolomKiri1.dua;
+            document.querySelector('.alokasi2 .infoKolom1.tiga').innerHTML = kolomKiri1.tiga;
+
+            document.querySelector('.alokasi2 .infoKolom3.satu').innerHTML = kolomKanan1.saham;
+            document.querySelector('.alokasi2 .infoKolom3.dua').innerHTML = kolomKanan1.obligasi;
+            document.querySelector('.alokasi2 .infoKolom3.tiga').innerHTML = kolomKanan1.pasar;
+
+            document.querySelector('.judulPorto').innerHTML = porto.judul;
+            document.querySelector('.tabelPortofolio .infoKolom1.satu').innerHTML = kolomKiri2.satu;
+            document.querySelector('.tabelPortofolio .infoKolom1.dua').innerHTML = kolomKiri2.dua;
+            document.querySelector('.tabelPortofolio .infoKolom1.tiga').innerHTML = kolomKiri2.tiga;
+            document.querySelector('.tabelPortofolio .infoKolom1.empat').innerHTML = kolomKiri2.empat;
+
+            document.querySelector('.tabelPortofolio .infoKolom3.satu').innerHTML = kolomKanan2.satu;
+            document.querySelector('.tabelPortofolio .infoKolom3.dua').innerHTML = kolomKanan2.dua;
+            document.querySelector('.tabelPortofolio .infoKolom3.tiga').innerHTML = kolomKanan2.tiga;
+            document.querySelector('.tabelPortofolio .infoKolom3.empat').innerHTML = kolomKanan2.empat;
+
+            document.querySelector('.keterangan').innerHTML = ket.judul;
+
+            const joinedText = Object.values(ketText).join('<br>');
+            document.querySelector('.pketerangan').innerHTML = joinedText;
+
+            document.querySelector('.kinerjaSejak').innerHTML = judulSejak;
+
+            document.querySelector('.kinerjaBulanan').innerHTML = judulBulanan;
+
+            document.querySelector('.kinerjaDana').innerHTML = judulDana;
+           
         })
         .catch(error => console.error('Error loading JSON:', error));
 </script>
