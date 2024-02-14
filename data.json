@@ -77,14 +77,97 @@
     }
     },
     "kinerjaAwal": {
-        "judul":"Kinerja Sejak Diluncurkan"
+        "judul":"Kinerja Sejak Diluncurkan",
+        "judulLabel": "Persentase Perubahan Kinerja Bulanan",
+        "bulan": [
+            "Dec-20", "Jun-21", "Dec-21", "Jun-22", "Dec-22", "Jun-23", "Dec-23"
+        ],
+        "dataKinerja": [
+            "6", "-2", "-2", "-3", "-3.5", "3", "5"
+        ]
     },
     "kinerjaBulanan": {
-        "judul":"Kinerja Bulanan dalam 3 Tahun Terakhir"
+        "judul":"Kinerja Bulanan dalam 3 Tahun Terakhir",
+        "judulLabel":"Total Perkembangan Dana: ",
+        "bulan": [
+            "Jul-07", "Apr-10", "Jan-13", "Oct-15", "Jun-18", "Mar-21", "Dec-23"
+        ],
+        "dataKinerja": [925.00, 1075.00, 1275.00, 1625.00, 2325.00, 2425.00, 2675.00
+        ]
     },
     "kinerjaDana": {
-        "judul": "Kinerja Dana"
+        "judul": "Kinerja Dana",
+        "judulTabel": "Kinerja dalam IDR per (29/12/23)",
+        "waktu": {
+            "satu": "1 Bulan",
+            "dua": "3 Bulan",
+            "tiga": "6 Bulan",
+            "empat": "Tahun Berjalan",
+            "lima": "1 Thn",
+            "enam": "3 Thn<sup>1)</sup>",
+            "tujuh": "5 Thn<sup>1)</sup>",
+            "delapan": "Sejak Diluncurkan <sup>1)</sup>"
+        },
+        "baris1": {
+            "satu": "MDM",
+            "dua": "1.76%",
+            "tiga": "-0.90%",
+            "empat": "0.94%",
+            "lima": "3.96%",
+            "enam": "3.96%",
+            "tujuh": "2.69%",
+            "delapan": "2.56%",
+            "sembilan": "5.49%"
+        },
+        "baris2": {
+            "satu": "PM<sup>2)</sup>",
+            "dua": "1.99%",
+            "tiga": "3.62%",
+            "empat": "5.46%",
+            "lima": "7.52%",
+            "enam": "7.52%",
+            "tujuh": "6.49%",
+            "delapan": "6.49%",
+            "sembilan": "8.82%"
+        } 
     },
+
+    "kinerjaTahunan": {
+        "judul": "Kinerja Tahunan",
+        "bulan": {
+            "satu": "2022",
+            "dua": "2021",
+            "tiga": "2020",
+            "empat": "2019",
+            "lima": "2018",
+            "enam": "2017",
+            "tujuh": "2016",
+            "delapan": "2015"
+        },
+        "baris1": {
+            "satu": "MDB",
+            "dua": "1.86%",
+            "tiga": "2.24%",
+            "empat": "0.75%",
+            "lima": "4.06%",
+            "enam": "-9.29%",
+            "tujuh": "11.57%",
+            "delapan": "11.82%",
+            "sembilan": "-7.04%"
+        },
+        "baris2": {
+            "satu": "PM<sup>2)</sup>",
+            "dua": "4.02%",
+            "tiga": "7.75%",
+            "empat": "-1.33%",
+            "lima": "7.96%",
+            "enam": "-2.36%",
+            "tujuh": "18.83%",
+            "delapan": "15.00%",
+            "sembilan": "-4.53%"
+        }
+    },
+
     "kepemilikan": {
         "judul": "Kepemilikan Terbesar* & Sektor Alokasi3)",
         "deposito": [

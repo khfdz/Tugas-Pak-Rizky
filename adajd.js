@@ -5,9 +5,21 @@ fetch('data.json')
         var dataKinerja = data.kinerjaBulanan.dataKinerja.map(Number);
         var judul = data.kinerjaBulanan.judulLabel;
 
-        var totalPerubahan = dataKinerja[dataKinerja.length - 1] - dataKinerja[0];
+        // Menghitung persentase perubahan kinerja bulanan
+        var persentasePerubahan = [];
+        for (let i = 1; i < dataKinerja.length; i++) {
+            var perubahan = ((dataKinerja[i] - dataKinerja[i - 1]) / dataKinerja[i - 1]) * 100;
+            persentasePerubahan.push(perubahan);
+        }
 
+        // Menjumlahkan persentase perubahan
+        var totalPerubahan = persentasePerubahan.reduce((total, amount) => total + amount, 0);
+
+        // Menambahkan total perubahan ke dataKinerja
         dataKinerja.push(totalPerubahan);
+
+        // Menyimpan label total pada bulan terakhir
+        labels.push('Total Perubahan');
 
         var Linectx = document.getElementById('lineChart').getContext('2d');
 
@@ -29,7 +41,7 @@ fetch('data.json')
                     y: {
                         ticks: {
                             callback: function(value) {
-                                return value; 
+                                return value;
                             }
                         }
                     }
