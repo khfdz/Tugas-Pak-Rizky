@@ -1,37 +1,137 @@
 {
-    "tujuan": "Bertujuan untuk mendapatkan pertumbuhan investasi yang tinggi dalam jangka panjang dengan menginvestasikan dananya pada instrumen pasar uang, efek pendapatan tetap termasuk obligasi pemerintah dan BUMN, dan saham publik di Indonesia.",
-    "risiko": "Klasifikasi risiko ditetapkan berdasarkan jenis dana.",
+    "judul": "MANULIFE DANA BERIMBANG",
+    "tanggal": "DES 2023",
+    "tujuanJudul": "Tujuan investasi",
+    "tujuanText": "Bertujuan untuk mendapatkan pertumbuhan investasi yang tinggi dalam jangka panjang dengan menginvestasikan dananya pada instrumen pasar uang, efek pendapatan tetap termasuk obligasi pemerintah dan BUMN, dan saham publik di Indonesia.",
+    "risikoJudul": "Klasifikasi Risiko",
+    "risikoText": "Klasifikasi risiko ditetapkan berdasarkan jenis dana.",
     "informasiDana": {
-        "tanggal_peluncuran": "9 Jul 07",
-        "harga_peluncuran": "IDR 1,000.00",
-        "jumlah_dana_kelolaan": "RP 138.95 miliar",
-        "jumlah_unit_penyertaan": "57,582,818.76",
-        "nilai_aktiva_bersih_per_unit": "IDR 2,413.08",
-        "mata_uang": "IDR",
-        "jenis_dana": "Campuran",
-        "valuasi": "Harian",
-        "bank_kustodian": "Bank DBS Indonesia",
-        "biaya_jasa_pengelolaan_mi": "2.00%",
-        "kode_bloomberg": "MLLDBBG IJ",
-        "manajer_investasi": "PT Manulife Aset Manajemen Indonesia"
+        "judul": "Informasi Dana",
+        "kolomKiri": {
+            "satu": "Tanggal Peluncuran",
+            "dua": "Harga Peluncuran",
+            "tiga": "Jumlah Dana Kelolaan",
+            "empat": "Jumlah Unit Penyertaan",
+            "lima": "Nilai Aktiva Bersih / Unit<sup>4</sup>",
+            "enam": "Mata Uang",
+            "tujuh": "Jenis Dana",
+            "delapan": "Valuasi",
+            "sembilan": "Bank Kustodian",
+            "sepuluh": "Biaya Jasa Pengelolaan MI",
+            "sebelas": "Kode Bloomberg",
+            "duabelas": "Manajer Investasi"
+        },
+        "kolomKanan":{
+            "satu": "9 Jul 07",
+            "dua": "IDR 1,000.00",
+            "tiga": "RP 138.95 miliar",
+            "empat": "57,582,818.76",
+            "lima": "IDR 2,413.08",
+            "enam": "IDR",
+            "tujuh": "Campuran",
+            "delapan": "Harian",
+            "sembilan": "Bank DBS Indonesia",
+            "sepuluh": "2.00%",
+            "sebelas": "MLLDBBG IJ",
+            "duabelas": "PT Manulife Aset Manajemen Indonesia"
+        }
     },
-    "alokasi": {
-        "saham": "40-60%",
-        "obligasi": "40-60%",
-        "pasar_uang": "0-20%"
+    "alokasi": 
+    {
+        "judul":"Alokasi",
+        "kolomKiri": {
+            "satu": "Saham",
+            "dua": "Obligasi",
+            "tiga": "Pasar Uang"
+            },
+        "kolomKanan": {
+            "saham": "40-60%",
+            "obligasi": "40-60%",
+            "pasar": "0-20%"
+            }
     },
-    "portofolio": {
-        "saham": "44.06%",
-        "obligasi_pemerintah": "52.32%",
-        "pasar_korporasi": "0.00%",
-        "pasar_uang": "3.62%"
+    "portofolio": 
+    {
+        "judul":"Portofolio",
+        "kolomKiri": {
+            "satu": "Saham",
+            "dua": "Obligasi Pemerintah",
+            "tiga": "Obligasi Korporasi",
+            "empat": "Pasar Uang" 
+        },
+        "kolomKanan": {
+            "satu": "44.06%",
+            "dua": "52.32%",
+            "tiga": "0.00%",
+            "empat": "3.62%"
+        }
+        
     },
     "keterangan": {
+        "judul":"Keterangan",
+        "keteranganText":{
         "satu": "1) Kinerja disetahunkan (1 tahun = 365 hari) dan menggunakan metode compounding/majemuk (khusus untuk produk yang berumur lebih dari setahun sejah Tanggal Peluncuran).",
         "dua": "2) Parameter yang digunakan adalah 50% IHSG + 50% BINDO Index.",
         "tiga": "3) Berdasarkan GICS (Global Industrials Classification Standard).",
         "empat": "4) Nilai Aktiva Bersih/Unit sudah memperhitungkan biaya-biaya, diantaranya biaya yang terkait dengan transaksi dan penyelesaian transaksi serta administrasi dan pencatatan."
     }
-    
-
+    },
+    "kinerjaAwal": {
+        "judul":"Kinerja Sejak Diluncurkan"
+    },
+    "kinerjaBulanan": {
+        "judul":"Kinerja Bulanan dalam 3 Tahun Terakhir"
+    },
+    "kinerjaDana": {
+        "judul": "Kinerja Dana"
+    },
+    "kepemilikan": {
+        "judul": "Kepemilikan Terbesar* & Sektor Alokasi3)",
+        "deposito": [
+            "Deposito - Bank BTN",
+            "Saham - Amman Mineral Internasional PT",
+            "Saham - Astra International Tbk PT",
+            "Saham - Bank Central Asia Tbk PT",
+            "Saham - Bank Mandiri Persero Tbk PT",
+            "Saham - Bank Negara Indonesia Persero",
+            "Saham - Bank Rakyat Indonesia Persero",
+            "Saham - Barito Pacific Tbk PT",
+            "Saham - Chandra Asri Petrochemical Tbk",
+            "Saham - Medikaloka Hermina Tbk PT",
+            "Saham - Mitra Keluarga Karyasehat Tbk",
+            "Saham - Sumber Alfaria Trijaya Tbk PT",
+            "Saham - Telkom Indonesia Persero Tbk P",
+            "Obligasi Negara Republik Indonesia Seri FR0054",
+            "Obligasi Negara Republik Indonesia Seri FR0068",
+            "Obligasi Negara Republik Indonesia Seri FR0075",
+            "Obligasi Negara Republik Indonesia Seri FR0081",
+            "Obligasi Negara Republik Indonesia Seri FR0090",
+            "SBSN Seri PBS003"
+        ],
+        "nonAfiliasi":"* Non Afiliasi",
+        "ketDonat": [
+            "Layanan Komunikasi",
+            "Diskresioner Konsumen",
+            "Barang Konsumen Pokok",
+            "Energi",
+            "keuangan",
+            "Perawatan Kesehatan",
+            "Industri",
+            "Bahan Baku",
+            "Real Estat",
+            "Utilitas",
+            "Pemerintah",
+            "Kas & Deposito"
+        ]
+        },
+        "ulasan": {
+            "judul": "Ulasan Manajer Investasi",
+            "keterangan": "Pasar saham dan obligasi Indonesia mencatat kinerja positif di Desember didukung oleh sentimen optimistis dari global. Data ekonomi AS yang melunak serta pandangan The Fed yang lebih dovish mendukung ekspektasi pasar terhadap peluang pemangkasan suku bunga di 2024. Inflasi AS terus melandai dengan CPI di November turun ke 3.1% YoY dari sebelumnya 3.2%. Selain itu proyeksi terkini The Fed di rapat FOMC Desember memperkirakan 75bps pemangkasan suku bunga di 2024, lebih besar dari perkiraan sebelumnya 50bps. Di pasar domestik, data makroekonomi suportif bagi pasar, di mana inflasi umum turun menjadi 2.6% YoY dari bulan November 2.9% YoY, dipicu penurunan harga pangan. BI mempertahankan suku bunga acuan di level 6% dengan postur kebijakan untuk fokus menjaga stabilitas nilai tukar Rupiah. Belanja negara meningkat ke IDR616 Triliun di bulan Desember, melebihi belanja di bulan November sebesar IDR270 Triliun. Ini merupakan hal positif karena belanja negara dapat berdampak positif pada pertumbuhan ekonomi. Secara keseluruhan, belanja negara tahun 2023 mencapai 100% dari target, sementara pendatapan tercatat 105% dari target. Defisit anggaran tercatat sebesar 1.65% dari PDB, jauh lebih rendah dari estimasi sebelumnya 2.3% PDB.",
+            "sanggahan":"Sanggahan: Laporan ini dipersiapkan oleh PT Asuransi Jiwa Manulife Indonesia hanya untuk keperluan informasi dan tidak seharusnya digunakan sebagai penawaran penjualan atau permohonan pembelian. Meskipun laporan ini telah dipersiapkan dengan seksama, PT Asuransi Jiwa Manulife Indonesia tidak menjamin keakuratan, kecukupan atau kelengkapan informasi yang diberikan, serta tidak bertanggung jawab atas segala konsekuensi apapun yang timbul akibat dari tindakan yang dilakukan atas dasar informasi dalam laporan ini. Investasi pada instrumen pasar modal mengandung risiko termasuk namun tidak terbatas pada risiko pasar, risiko kredit, risiko perubahan tingkat suku bunga, risiko nilai tukar (khususnya untuk Dana yang memiliki alokasi pada instrumen investasi luar negeri dalam mata uang yang berbeda dengan mata uang Dana), risiko likuiditas dan risiko lainnya yang dapat menyebabkan fluktuasi kinerja. Oleh karena itu kinerja Dana tidak dijamin, nilai unit penyertaan dalam Dana dapat bertambah atau berkurang dan kinerja investasi masa lalu tidak mengindikasikan kinerja investasi di masa depan",
+            "ulasanManulife": {
+                "judul": "Manulife Indonesia",
+                "keterangan1": "Didirikan pada tahun 1985, PT Asuransi Jiwa Manulife Indonesia (Manulife Indonesia) Merupakan bagian dari Manulife Financial Corporation, grup penyedia layanan keuangan dari Kanada yang beroperasi di Asia, Kanada dan Amerika Serikat. Manulife Indonesia menawarkan beragam layanan keuangan termasuk asuransi jiwa, asuransi kecelakaan dan kesehatan, layanan investasi dan dana pensiun kepada konsumen individu maupun pelaku usaha di Indonesia. Melalui jaringan dengan jumlah hampir mencapai 11.000 karyawan dan agen profesional yang tersebar di lebih dari 30 kantor pemasaran, Manulife Indonesia melayani sekitar 2 juta nasabah di Indonesia",
+                "keterangan2": "PT Asuransi Jiwa Manulife Indonesia Berizin dan Diawasi oleh Otoritas Jasa Keuangan (OJK). Untuk informasi lengkap mengenai Manulife Indonesia, kunjungi akun resmi kami di Facebook, Twitter, Instagram, YouTube, dan www.manulife.co.id"
+            }
+        }
 }
