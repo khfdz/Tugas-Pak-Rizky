@@ -6,8 +6,8 @@ var data = [6, 1, 3, -3, 1, -1, -2, 2, 2.5,
             1, 2, -1, 1.8, 2, 1, -1, 4, 2, 2
             ];
 
-var ctx = document.getElementById('myChart').getContext('2d');
-var myChart = new Chart(ctx, {
+var Barctx = document.getElementById('barChart').getContext('2d');
+var myChart = new Chart(Barctx, {
     type: 'bar',
     data: {
         labels: labels,
