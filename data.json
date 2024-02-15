@@ -77,52 +77,151 @@
     }
     },
     "kinerjaAwal": {
-        "judul":"Kinerja Sejak Diluncurkan"
+        "judul":"Kinerja Sejak Diluncurkan",
+        "judulLabel": "Persentase Perubahan Kinerja Bulanan",
+        "bulan": [
+            "Dec-20", "Jun-21", "Dec-21", "Jun-22", "Dec-22", "Jun-23", "Dec-23"
+        ],
+        "dataKinerja": [
+            "6", "-2", "-2", "-3", "-3.5", "3", "5"
+        ]
     },
     "kinerjaBulanan": {
-        "judul":"Kinerja Bulanan dalam 3 Tahun Terakhir"
+        "judul":"Kinerja Bulanan dalam 3 Tahun Terakhir",
+        "judulLabel":"Total Perkembangan Dana: ",
+        "bulan": [
+            "Jul-07", "Apr-10", "Jan-13", "Oct-15", "Jun-18", "Mar-21", "Dec-23"
+        ],
+        "dataKinerja": [925.00, 1075.00, 1275.00, 1625.00, 2325.00, 2425.00, 2675.00
+        ]
     },
     "kinerjaDana": {
-        "judul": "Kinerja Dana"
+        "judul": "Kinerja Dana",
+        "judulTabel": "Kinerja dalam IDR per (29/12/23)",
+        "waktu": {
+            "satu": "1 Bulan",
+            "dua": "3 Bulan",
+            "tiga": "6 Bulan",
+            "empat": "Tahun Berjalan",
+            "lima": "1 Thn",
+            "enam": "3 Thn<sup>1)</sup>",
+            "tujuh": "5 Thn<sup>1)</sup>",
+            "delapan": "Sejak Diluncurkan <sup>1)</sup>"
+        },
+        "baris1": {
+            "satu": "MDM",
+            "dua": "1.76%",
+            "tiga": "-0.90%",
+            "empat": "0.94%",
+            "lima": "3.96%",
+            "enam": "3.96%",
+            "tujuh": "2.69%",
+            "delapan": "2.56%",
+            "sembilan": "5.49%"
+        },
+        "baris2": {
+            "satu": "PM<sup>2)</sup>",
+            "dua": "1.99%",
+            "tiga": "3.62%",
+            "empat": "5.46%",
+            "lima": "7.52%",
+            "enam": "7.52%",
+            "tujuh": "6.49%",
+            "delapan": "6.49%",
+            "sembilan": "8.82%"
+        } 
     },
+
+    "kinerjaTahunan": {
+        "judul": "Kinerja Tahunan",
+        "bulan": {
+            "satu": "2022",
+            "dua": "2021",
+            "tiga": "2020",
+            "empat": "2019",
+            "lima": "2018",
+            "enam": "2017",
+            "tujuh": "2016",
+            "delapan": "2015"
+        },
+        "baris1": {
+            "satu": "MDB",
+            "dua": "1.86%",
+            "tiga": "2.24%",
+            "empat": "0.75%",
+            "lima": "4.06%",
+            "enam": "-9.29%",
+            "tujuh": "11.57%",
+            "delapan": "11.82%",
+            "sembilan": "-7.04%"
+        },
+        "baris2": {
+            "satu": "PM<sup>2)</sup>",
+            "dua": "4.02%",
+            "tiga": "7.75%",
+            "empat": "-1.33%",
+            "lima": "7.96%",
+            "enam": "-2.36%",
+            "tujuh": "18.83%",
+            "delapan": "15.00%",
+            "sembilan": "-4.53%"
+        }
+    },
+
     "kepemilikan": {
         "judul": "Kepemilikan Terbesar* & Sektor Alokasi3)",
-        "deposito": [
-            "Deposito - Bank BTN",
-            "Saham - Amman Mineral Internasional PT",
-            "Saham - Astra International Tbk PT",
-            "Saham - Bank Central Asia Tbk PT",
-            "Saham - Bank Mandiri Persero Tbk PT",
-            "Saham - Bank Negara Indonesia Persero",
-            "Saham - Bank Rakyat Indonesia Persero",
-            "Saham - Barito Pacific Tbk PT",
-            "Saham - Chandra Asri Petrochemical Tbk",
-            "Saham - Medikaloka Hermina Tbk PT",
-            "Saham - Mitra Keluarga Karyasehat Tbk",
-            "Saham - Sumber Alfaria Trijaya Tbk PT",
-            "Saham - Telkom Indonesia Persero Tbk P",
-            "Obligasi Negara Republik Indonesia Seri FR0054",
-            "Obligasi Negara Republik Indonesia Seri FR0068",
-            "Obligasi Negara Republik Indonesia Seri FR0075",
-            "Obligasi Negara Republik Indonesia Seri FR0081",
-            "Obligasi Negara Republik Indonesia Seri FR0090",
-            "SBSN Seri PBS003"
-        ],
-        "nonAfiliasi":"* Non Afiliasi",
-        "ketDonat": [
-            "Layanan Komunikasi",
-            "Diskresioner Konsumen",
-            "Barang Konsumen Pokok",
-            "Energi",
-            "keuangan",
-            "Perawatan Kesehatan",
-            "Industri",
-            "Bahan Baku",
-            "Real Estat",
-            "Utilitas",
-            "Pemerintah",
-            "Kas & Deposito"
-        ]
+        "nonAfiliasi": {
+            "satu": "Deposito - Bank BTN",
+            "dua": "Saham - Amman Mineral Internasional PT",
+            "tiga": "Saham - Astra International Tbk PT",
+            "empat": "Saham - Bank Central Asia Tbk PT",
+            "lima": "Saham - Bank Mandiri Persero Tbk PT",
+            "enam": "Saham - Bank Negara Indonesia Persero",
+            "tujuh": "Saham - Bank Rakyat Indonesia Persero",
+            "delapan": "Saham - Barito Pacific Tbk PT",
+            "sembilan": "Saham - Chandra Asri Petrochemical Tbk",
+            "sepuluh": "Saham - Medikaloka Hermina Tbk PT",
+            "sebelas": "Saham - Mitra Keluarga Karyasehat Tbk",
+            "duabelas": "*Non Afiliasi"
+        },
+        "sbsnSeri": {
+            "satu": "Saham - Sumber Alfaria Trijaya Tbk PT",
+            "dua": "Saham - Telkom Indonesia Persero Tbk P",
+            "tiga": "Obligasi Negara Republik Indonesia Seri FR0054",
+            "empat": "Obligasi Negara Republik Indonesia Seri FR0068",
+            "lima": "Obligasi Negara Republik Indonesia Seri FR0075",
+            "enam": "Obligasi Negara Republik Indonesia Seri FR0081",
+            "tujuh": "Obligasi Negara Republik Indonesia Seri FR0090",
+            "delapan": "SBSN Seri PBS003"
+        },
+        "ketDonat": {
+            "satu": "Layanan Komunikasi",
+            "dua": "Diskresioner Konsumen",
+            "tiga": "Barang Konsumen Pokok",
+            "empat": "Energi",
+            "lima": "Keuangan",
+            "enam": "Perawatan Kesehatan",
+            "tujuh": "Industri",
+            "delapan": "Bahan Baku",
+            "sembilan": "Real Estat",
+            "sepuluh": "Utilitas",
+            "sebelas": "Pemerintah",
+            "duabelas": "Kas & Deposito"
+        },
+        "dataDonat": {
+            "satu": "6.25",
+            "dua": "1.45",
+            "tiga": "4.53",
+            "empat": "2.83",
+            "lima": "16.15",
+            "enam": "2.43",
+            "tujuh": "2.40",
+            "delapan": "6.85",
+            "sembilan": "0.95",
+            "sepuluh": "0.21",
+            "sebelas": "52.32",
+            "duabelas": "3.62"
+        }
         },
         "ulasan": {
             "judul": "Ulasan Manajer Investasi",
