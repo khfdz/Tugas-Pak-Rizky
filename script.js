@@ -35,3 +35,5 @@ fetch('data.json')
     .catch(error => {
         console.error('Error loading data:', error);
     });
+
+    
