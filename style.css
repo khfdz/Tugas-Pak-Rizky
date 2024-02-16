@@ -1,0 +1,633 @@
+.warna{
+    background-color: #189a5a;
+    background-color: #00a757;
+    background-color: #0e0c9b;
+    background-color: #00a65a;
+}
+
+
+.navMenu {
+    background-color: #01ac5d;
+    height: 150px;
+    font-size: 70px;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    color: white;
+    padding-left: 80px;
+    border-right: 8px solid white;
+}
+
+.logoManulife {
+    background-image: url('./gambar/manulife.png'); 
+    background-repeat: no-repeat;
+    background-size: contain; 
+    display: inline-block;
+    padding-left: 130px; /* Sesuaikan jarak antara tulisan dan gambar */
+}
+
+.navFact {
+    background-color: #283890;
+    font-size: 70px;
+    font-weight: 350;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+}
+
+.manuDana {
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.des2023 {
+    margin-top: 20px;
+    border: 4px solid green;
+    padding: 10px;
+    width: 11%;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.tujuanInvest {
+    margin-left: -10px;
+    margin-top: 20px;
+    justify-content: left;
+    display: flex;
+    color: #ed7717;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+  .garis {
+    margin-left: -10px;
+    border-top: 5px solid #189a5a;
+    width: 92%; 
+    margin-top: 0px; 
+}
+
+.garisInformasi {
+    margin-left: -10px;
+    border-top: 5px solid #189a5a;
+    width: 92%; 
+    margin-top: 0px; 
+    margin-bottom: 20px;
+}
+
+.klasiRisiko {
+    margin-top: 20px;
+    justify-content: left;
+    display: flex;
+    color: #ed7717;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.risikoAtas {
+    display: flex; 
+    justify-content: space-around; 
+    margin-bottom: -15px;
+}
+
+.rendah {
+    margin-left: -510px;
+    font-weight: 600;
+}
+
+.sedang {
+    display: flex;
+    margin-left: 10px;
+    position: absolute;
+    font-weight: 600;
+}
+
+.tinggi {
+    margin-left: 520px;
+    position: absolute;
+    font-weight: 600;
+}
+
+.risikoBawah {
+    display: flex; 
+    justify-content: space-around; 
+}
+
+.pasar {
+    margin-left: -500px;
+    font-weight: 600;
+}
+
+.tetap {
+    margin-left: -250px;
+    position: absolute;
+    font-weight: 600;
+}
+
+.campuran {
+    margin-left: 110px;
+    position: absolute;
+    font-weight: 600;
+}
+
+.saham {
+    margin-left: 520px;
+    position: absolute;
+    font-weight: 600;
+}
+
+.garis2 {
+    border-top: 5px solid #189a5a;
+    width: 102%; 
+    margin-top: 0px;
+}
+
+.garisAlokasi {
+    border-top: 5px solid #189a5a;
+    width: 102%; 
+    margin-top: -15px;
+}
+
+.garisKeterangan {
+    border-top: 5px solid #189a5a;
+    width: 205%; 
+    margin-top: 0px;
+}
+
+.garisPanjang1 {
+    margin-left: -10px;
+    border-top: 5px solid #189a5a;
+    width: 105%; 
+    margin-top: 0px; 
+}
+
+.garisPanjang2 {
+    margin-left: -10px;
+    border-top: 5px solid #189a5a;
+    width: 105%; 
+    margin-top: 0px; 
+}
+
+.garisFull {
+    border-top: 5px solid #189a5a;
+    width: 130%; 
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tujuanText {
+    margin-left: -10px;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: -10px;
+    text-align: justify; 
+    width: 92%;
+    font-weight: 600;
+}
+
+.risikoText {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: -10px; /* Atur margin atas sesuai kebutuhan */
+    text-align: justify; /* Menyesuaikan teks menjadi rata kanan-kiri */
+    width: 102%;
+    font-weight: 600;
+}
+
+.gradient-box {
+    width: 102%;
+    height: 30px; /* Tinggi gradient-box */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; 
+    position: relative;
+}
+
+.box1 {
+    width: 25%;
+    border-right: 5px solid white;
+    background: linear-gradient(90deg,
+    hsl(129deg 74% 20%) 25%,
+    hsl(101deg 62% 24%) 50%,
+    hsl(90deg 67% 25%) 75%,
+    hsl(83deg 71% 26%) 100%
+    );
+}
+
+.box2 {
+    margin-left: 0px;
+    border-right: 5px solid white;
+    width: 25%; /* Lebar masing-masing kotak */
+    background: linear-gradient(90deg,
+    hsl(64deg 76% 29%) 25%,
+    hsl(51deg 85% 38%) 75%
+    );
+}
+
+.box3 {
+    margin-left: 0px;
+    border-right: 5px solid white;
+    width: 50%; /* Lebar masing-masing kotak */
+    background: linear-gradient(90deg,
+    hsl(47deg 91% 45%) 16%,
+    hsl(45deg 100% 50%) 32%,
+    hsl(41deg 100% 48%) 48%,
+    hsl(35deg 100% 45%) 64%,
+    hsl(25deg 100% 43%) 80%,
+    hsl(15deg 100% 41%) 100%
+    );
+}
+
+.box4 {
+    margin-left: 0px;
+    width: 25%; /* Lebar masing-masing kotak */
+    background: linear-gradient(90deg,
+    hsl(13deg 99% 40%) 33%,
+    hsl(9deg 99% 39%) 66%,
+    hsl(0deg 99% 38%) 100%
+    );
+}
+
+.segitiga {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid white; 
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 360px;
+    }
+
+    .tableKinerja {
+        font-size: 15px;
+        font-weight: 600;
+        width: 100%;
+        margin-top: -13px;
+    }
+
+    .tableTahunan {
+        font-size: 15px;
+        font-weight: 600;
+        width: 100%;
+        margin-top: -13px;
+    }
+
+    .judulKolom {
+    text-align: center; 
+    vertical-align: middle;
+    background-color: #00a65a;
+    color: white;
+}
+
+    .kinerjaKolom0 {
+    width: 100px;
+    height: 72px;
+    background-color: #eaf2dd;
+    border-bottom: 5px solid #00a65a;
+    }
+    .kinerjaKolom1 {
+    width: 80px;
+    background-color: #eaf2dd;
+    border-bottom: 5px solid #00a65a;
+    }
+    .kinerjaKolom2 {
+    width: 80px;
+    background-color: #eaf2dd;
+    border-bottom: 5px solid #00a65a;
+    }
+    .kinerjaKolom3 {
+    width: 80px;
+    background-color: #eaf2dd;
+    border-bottom: 5px solid #00a65a;
+    }
+    .kinerjaKolom4 {
+    width: 80px;
+    background-color: #eaf2dd;
+    border-bottom: 5px solid #00a65a;
+    }
+    .kinerjaKolom5 {
+    width: 80px;
+    background-color: #eaf2dd;
+    border-bottom: 5px solid #00a65a;
+    }
+    .kinerjaKolom6 {
+    width: 80px;
+    background-color: #eaf2dd;
+    border-bottom: 5px solid #00a65a;
+    }
+    .kinerjaKolom7 {
+    width: 80px;
+    background-color: #eaf2dd;
+    border-bottom: 5px solid #00a65a;
+    }
+    .kinerjaKolom8 {
+    width: 80px;
+    background-color: #eaf2dd;
+    border-bottom: 5px solid #00a65a;
+    }
+    .kinerjaKolom9 {
+    text-align: left;
+    width: 0px;
+    height: 50px;
+    }
+    .kinerjaKolom18 {
+    text-align: left;
+    width: 0pxpx;
+    }
+
+.table {
+    margin-left: -15px;
+    margin-top: -20px;
+    width: 100%; /* Mengatur panjang tabel */
+    font-weight: 600;
+}
+
+.table td {
+    text-align: left; /* Mengatur teks berada di sebelah kiri */
+    border: none;
+}
+
+.infoKolom1 {
+    width: 31%; /* Atur lebar kolom ":" sesuai kebutuhan */
+}
+
+.infoKolom2 {
+    width: 1%; /* Atur lebar kolom ":" sesuai kebutuhan */
+    text-align: left;
+}
+
+.infoKolom3 {
+    text-align: center;
+    width: 50%; /* Adjust the width as needed */
+    margin-left: 10px; /* Add margin to create space between infoKolom2 and infoKolom3 */
+}
+
+
+.alokasi1{
+    margin-top: 20px;
+    justify-content: left;
+    display: flex;
+    justify-content: space-between;
+    color: #ed7717;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: -15px;
+}
+
+.alokasi1 p {
+    margin-left: 0; /* Mengatur margin agar "Alokasi" tidak terlalu ke kiri */
+    margin-right: 200px; 
+}
+
+.alokasi2{
+    margin-left: 10px;
+    margin-top: 20px;
+    justify-content: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabelAlokasi,
+.tabelPortofolio {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.tabelPortofolio {
+     margin-left: 70px; 
+}
+
+.tabelPortofolio .infoKolom1{
+     width: 100%; 
+     
+}
+
+.tabelPortofolio .infoKolom3{
+    margin-left: 30px;
+    display: flex; 
+}
+
+.keterangan {
+    margin-top: -20px;
+    justify-content: left;
+    display: flex;
+    color: #ed7717;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.pketerangan {
+    width: 205%;
+    text-align: justify;
+    margin-top: -10px;
+    font-weight: 600;
+}
+
+.textTengah {
+    margin-bottom: 0px;
+    color: #ed7717;
+    font-weight: bold;
+    font-size: 18px;  
+}
+
+.textKepemilikan {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: #ed7717;
+    font-weight: bold;
+    font-size: 18px;  
+}
+
+.kinerjaDana {
+    margin-bottom: -1px;
+    color: #ed7717;
+    font-weight: bold;
+    font-size: 18px;  
+}
+
+.judulKolom {
+    width: 200px;
+}
+
+.kinerjaSejak {
+    color: #ed7717;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.kinerjaBulanan {
+    color: #ed7717;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.textKepemilikan1 {
+    margin-top: -20px;
+    margin-left: -10px;
+    text-align: left;
+    font-weight: 650;
+    font-size: 14px;
+}
+
+.textKepemilikan2 {
+    margin-top: -20px;
+    margin-left: 0px;
+    text-align: left;
+    font-weight: 650;
+    font-size: 14px;
+}
+
+.textKepemilikan3 {
+    margin-top: 20px;
+    margin-left: -50px;
+    text-align: left;
+    font-weight: 650;
+    font-size: 14px;
+}
+
+.pieChart {
+    margin-left: -100px;
+}
+
+.textKepemilikan4 {
+    margin-top: 20px;
+    margin-left: 0px;
+    text-align: left;
+    font-weight: 650;
+    font-size: 14px;
+}
+
+.ulasanManajer {
+    margin-bottom: 0px;
+    color: #ed7717;
+    font-weight: bold;
+    font-size: 18px;  
+}
+
+.textUlasan {
+    text-align: justify;
+    margin-top: -18px;
+    margin-left: -10px;
+    font-weight: 600;
+}
+
+.bungkus {
+    margin-top: -20px;
+    margin-bottom: -10px;
+    text-align: justify;
+    margin-left: -10px;
+}
+
+.textAwalSanggahan {
+    text-align: justify;
+    margin-top: -18px;
+    margin-left: 0px;
+    color: blue;
+    font-weight: 800;
+    display: inline;
+    width: 10%; /* Set the width to fill the entire line */
+}
+
+.textSanggahan {
+    text-align: justify;
+    margin-top: 100px;
+    margin-left: 0px;
+    color: blue;
+    font-weight: 600;
+    display: inline;
+    width: 0%; /* Set the width to fill the entire line */
+} 
+
+.textManulife {
+    margin-top: 0px;
+    text-align: justify;
+    margin-left: -5px; 
+    z-index: 2;
+    display: block;
+    color: white;
+}
+
+.bgManulife {
+    background-color: #01ac5d;
+    height: 170px;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+.garisFullTebal {
+    margin-top: 50px;
+    border-top: 9px solid #189a5a;
+    width: 130%; 
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.logoWebsite {
+    background-image: url('./gambar/website.png'); 
+    background-repeat: no-repeat;
+    background-size: contain; 
+    display: inline-block;
+    padding-left: 5px; 
+    width: 100%;
+    height: 70%;
+}
+
+.textFooter {
+    margin-top: 2px;
+    margin-left: 5px;
+    font-size: 16px;
+    display: flex;
+    text-decoration: none;
+    display: inline-block;
+    color: #0cb361;
+    font-weight: 400;
+}
+
+.logoFacebook {
+    background-image: url('./gambar/facebook.png'); 
+    background-repeat: no-repeat;
+    background-size: contain; 
+    display: inline-block;
+    padding-left: 5px; 
+    width: 100%;
+    height: 70%;
+}
+
+.logoTwitter {
+    background-image: url('./gambar/twitter.png'); 
+    background-repeat: no-repeat;
+    background-size: contain; 
+    display: inline-block;
+    padding-left: 5px; 
+    width: 100%;
+    height: 70%;
+}
+
+.logoInstagram {
+    background-image: url('./gambar/instagram.png'); 
+    background-repeat: no-repeat;
+    background-size: contain; 
+    display: inline-block;
+    padding-left: 5px; 
+    width: 100%;
+    height: 70%;
+}
+
+.logoYoutube {
+    background-image: url('./gambar/youtube.png'); 
+    background-repeat: no-repeat;
+    background-size: contain; 
+    display: inline-block;
+    padding-left: 5px; 
+    width: 100%;
+    height: 70%;
+}

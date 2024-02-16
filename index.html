@@ -4,607 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
-    <style>
-
-        .warna{
-            background-color: #189a5a;
-            background-color: #00a757;
-            background-color: #0e0c9b;
-            background-color: #00a65a;
-        }
-
-
-        .navMenu {
-            background-color: #01ac5d;
-            height: 150px;
-            font-size: 70px;
-            align-items: center;
-            justify-content: left;
-            display: flex;
-            color: white;
-            padding-left: 80px;
-            border-right: 8px solid white;
-        }
-
-        .logoManulife {
-            background-image: url('./gambar/manulife.png'); 
-            background-repeat: no-repeat;
-            background-size: contain; 
-            display: inline-block;
-            padding-left: 130px; /* Sesuaikan jarak antara tulisan dan gambar */
-        }
-
-        .navFact {
-            background-color: #283890;
-            font-size: 70px;
-            font-weight: 350;
-            align-items: center;
-            justify-content: center;
-            display: flex;
-            color: white;
-        }
-
-        .manuDana {
-            margin-top: 20px;
-            font-size: 40px;
-            font-weight: 500;
-        }
-
-        .des2023 {
-            margin-top: 20px;
-            border: 4px solid green;
-            padding: 10px;
-            width: 11%;
-            font-size: 16px;
-            font-weight: 800;
-        }
-
-        .tujuanInvest {
-            margin-left: -10px;
-            margin-top: 20px;
-            justify-content: left;
-            display: flex;
-            color: #ed7717;
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-          .garis {
-            margin-left: -10px;
-            border-top: 5px solid #189a5a;
-            width: 92%; 
-            margin-top: 0px; 
-        }
-
-        .garisInformasi {
-            margin-left: -10px;
-            border-top: 5px solid #189a5a;
-            width: 92%; 
-            margin-top: 0px; 
-            margin-bottom: 20px;
-        }
-
-        .klasiRisiko {
-            margin-top: 20px;
-            justify-content: left;
-            display: flex;
-            color: #ed7717;
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-        .risikoAtas {
-            display: flex; 
-            justify-content: space-around; 
-            margin-bottom: -15px;
-        }
-
-        .rendah {
-            margin-left: -510px;
-        }
-
-        .sedang {
-            display: flex;
-            margin-left: 10px;
-            position: absolute;
-        }
-
-        .tinggi {
-            margin-left: 520px;
-            position: absolute;
-        }
-
-        .risikoBawah {
-            display: flex; 
-            justify-content: space-around; 
-        }
-
-        .pasar {
-            margin-left: -500px;
-        }
-
-        .tetap {
-            margin-left: -250px;
-            position: absolute;
-        }
-
-        .campuran {
-            margin-left: 110px;
-            position: absolute;
-        }
-
-        .saham {
-            margin-left: 520px;
-            position: absolute;
-        }
-
-        .garis2 {
-            border-top: 5px solid #189a5a;
-            width: 102%; 
-            margin-top: 0px;
-        }
-
-        .garisAlokasi {
-            border-top: 5px solid #189a5a;
-            width: 102%; 
-            margin-top: -15px;
-        }
-
-        .garisKeterangan {
-            border-top: 5px solid #189a5a;
-            width: 205%; 
-            margin-top: 0px;
-        }
-
-        .garisPanjang1 {
-            margin-left: -10px;
-            border-top: 5px solid #189a5a;
-            width: 105%; 
-            margin-top: 0px; 
-        }
-
-        .garisPanjang2 {
-            margin-left: -10px;
-            border-top: 5px solid #189a5a;
-            width: 105%; 
-            margin-top: 0px; 
-        }
-
-        .garisFull {
-            border-top: 5px solid #189a5a;
-            width: 130%; 
-            display: flex;
-            margin-bottom: 20px;
-        }
-
-        .tujuanText {
-            margin-left: -10px;
-            font-size: 16px;
-            line-height: 1.6;
-            margin-top: -10px;
-            text-align: justify; 
-            width: 92%;
-        }
-
-        .risikoText {
-            font-size: 16px;
-            line-height: 1.5;
-            margin-top: -10px; /* Atur margin atas sesuai kebutuhan */
-            text-align: justify; /* Menyesuaikan teks menjadi rata kanan-kiri */
-            width: 102%;
-        }
-
-        .gradient-box {
-            width: 102%;
-            height: 30px; /* Tinggi gradient-box */
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px; 
-            position: relative;
-        }
-
-        .box1 {
-            width: 25%;
-            border-right: 5px solid white;
-            background: linear-gradient(90deg,
-            hsl(129deg 74% 20%) 25%,
-            hsl(101deg 62% 24%) 50%,
-            hsl(90deg 67% 25%) 75%,
-            hsl(83deg 71% 26%) 100%
-            );
-        }
-
-        .box2 {
-            margin-left: 0px;
-            border-right: 5px solid white;
-            width: 25%; /* Lebar masing-masing kotak */
-            background: linear-gradient(90deg,
-            hsl(64deg 76% 29%) 25%,
-            hsl(51deg 85% 38%) 75%
-            );
-        }
-
-        .box3 {
-            margin-left: 0px;
-            border-right: 5px solid white;
-            width: 50%; /* Lebar masing-masing kotak */
-            background: linear-gradient(90deg,
-            hsl(47deg 91% 45%) 16%,
-            hsl(45deg 100% 50%) 32%,
-            hsl(41deg 100% 48%) 48%,
-            hsl(35deg 100% 45%) 64%,
-            hsl(25deg 100% 43%) 80%,
-            hsl(15deg 100% 41%) 100%
-            );
-        }
-
-        .box4 {
-            margin-left: 0px;
-            width: 25%; /* Lebar masing-masing kotak */
-            background: linear-gradient(90deg,
-            hsl(13deg 99% 40%) 33%,
-            hsl(9deg 99% 39%) 66%,
-            hsl(0deg 99% 38%) 100%
-            );
-        }
-
-        .segitiga {
-            width: 0;
-            height: 0;
-            border-left: 15px solid transparent;
-            border-right: 15px solid transparent;
-            border-bottom: 30px solid white; 
-            position: absolute;
-            margin-top: -30px;
-            margin-left: 360px;
-            }
-
-            .tableKinerja {
-                font-size: 15px;
-                font-weight: 600;
-                width: 100%;
-                margin-top: -13px;
-            }
-
-            .tableTahunan {
-                font-size: 15px;
-                font-weight: 600;
-                width: 100%;
-                margin-top: -13px;
-            }
-
-            .judulKolom {
-            text-align: center; 
-            vertical-align: middle;
-            background-color: #00a65a;
-            color: white;
-        }
-
-            .kinerjaKolom0 {
-            width: 100px;
-            height: 72px;
-            background-color: #eaf2dd;
-            border-bottom: 5px solid #00a65a;
-            }
-            .kinerjaKolom1 {
-            width: 80px;
-            background-color: #eaf2dd;
-            border-bottom: 5px solid #00a65a;
-            }
-            .kinerjaKolom2 {
-            width: 80px;
-            background-color: #eaf2dd;
-            border-bottom: 5px solid #00a65a;
-            }
-            .kinerjaKolom3 {
-            width: 80px;
-            background-color: #eaf2dd;
-            border-bottom: 5px solid #00a65a;
-            }
-            .kinerjaKolom4 {
-            width: 80px;
-            background-color: #eaf2dd;
-            border-bottom: 5px solid #00a65a;
-            }
-            .kinerjaKolom5 {
-            width: 80px;
-            background-color: #eaf2dd;
-            border-bottom: 5px solid #00a65a;
-            }
-            .kinerjaKolom6 {
-            width: 80px;
-            background-color: #eaf2dd;
-            border-bottom: 5px solid #00a65a;
-            }
-            .kinerjaKolom7 {
-            width: 80px;
-            background-color: #eaf2dd;
-            border-bottom: 5px solid #00a65a;
-            }
-            .kinerjaKolom8 {
-            width: 80px;
-            background-color: #eaf2dd;
-            border-bottom: 5px solid #00a65a;
-            }
-            .kinerjaKolom9 {
-            text-align: left;
-            width: 0px;
-            height: 50px;
-            }
-            .kinerjaKolom18 {
-            text-align: left;
-            width: 0pxpx;
-            }
-
-        .table {
-            margin-left: -15px;
-            margin-top: -20px;
-            width: 100%; /* Mengatur panjang tabel */
-        }
-
-        .table td {
-            text-align: left; /* Mengatur teks berada di sebelah kiri */
-            border: none;
-        }
-
-        .infoKolom1 {
-            width: 31%; /* Atur lebar kolom ":" sesuai kebutuhan */
-        }
-
-        .infoKolom2 {
-            width: 1%; /* Atur lebar kolom ":" sesuai kebutuhan */
-            text-align: left;
-        }
-
-        .infoKolom3 {
-            text-align: center;
-            width: 50%; /* Adjust the width as needed */
-            margin-left: 10px; /* Add margin to create space between infoKolom2 and infoKolom3 */
-        }
-
-
-        .alokasi1{
-            margin-top: 20px;
-            justify-content: left;
-            display: flex;
-            justify-content: space-between;
-            color: #ed7717;
-            font-weight: bold;
-            font-size: 18px;
-            margin-right: -15px;
-        }
-
-        .alokasi1 p {
-            margin-left: 0; /* Mengatur margin agar "Alokasi" tidak terlalu ke kiri */
-            margin-right: 200px; 
-        }
-
-        .alokasi2{
-            margin-left: 10px;
-            margin-top: 20px;
-            justify-content: left;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .tabelAlokasi,
-        .tabelPortofolio {
-            display: inline-block;
-            vertical-align: top;
-        }
-
-        .tabelPortofolio {
-             margin-left: 85px; 
-        }
-
-        .tabelPortofolio .infoKolom1{
-             width: 100%; 
-             
-        }
-
-        .tabelPortofolio .infoKolom3{
-            margin-left: 30px;
-            display: flex; 
-        }
-
-        .keterangan {
-            margin-top: -20px;
-            justify-content: left;
-            display: flex;
-            color: #ed7717;
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-        .pketerangan {
-            width: 205%;
-            text-align: justify;
-            margin-top: -10px;
-            /* font-size: 15px; */
-        }
-
-        .textTengah {
-            margin-bottom: 0px;
-            color: #ed7717;
-            font-weight: bold;
-            font-size: 18px;  
-        }
-
-        .textKepemilikan {
-            margin-top: 10px;
-            margin-bottom: 0px;
-            color: #ed7717;
-            font-weight: bold;
-            font-size: 18px;  
-        }
-
-        .kinerjaDana {
-            margin-bottom: -1px;
-            color: #ed7717;
-            font-weight: bold;
-            font-size: 18px;  
-        }
-
-        .judulKolom {
-            width: 200px;
-        }
-
-        .kinerjaSejak {
-            color: #ed7717;
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-
-        .kinerjaBulanan {
-            color: #ed7717;
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-        .textKepemilikan1 {
-            margin-top: -20px;
-            margin-left: -10px;
-            text-align: left;
-            font-weight: 650;
-            font-size: 14px;
-        }
-
-        .textKepemilikan2 {
-            margin-top: -20px;
-            margin-left: 0px;
-            text-align: left;
-            font-weight: 650;
-            font-size: 14px;
-        }
-
-        .textKepemilikan3 {
-            margin-top: 20px;
-            margin-left: -50px;
-            text-align: left;
-            font-weight: 650;
-            font-size: 14px;
-        }
-
-        .pieChart {
-            margin-left: -100px;
-        }
-
-        .textKepemilikan4 {
-            margin-top: 20px;
-            margin-left: 0px;
-            text-align: left;
-            font-weight: 650;
-            font-size: 14px;
-        }
-
-        .ulasanManajer {
-            margin-bottom: 0px;
-            color: #ed7717;
-            font-weight: bold;
-            font-size: 18px;  
-        }
-
-        .textUlasan {
-            text-align: justify;
-            margin-top: -18px;
-            margin-left: -10px;
-            font-weight: 600;
-        }
-
-        .textSanggahan {
-            text-align: justify;
-            margin-top: -18px;
-            margin-left: -10px;
-            color: blue;
-            font-weight: 600;
-        }
-
-        .textManulife {
-            text-align: justify;
-            margin-top: 18px;
-            margin-left: -10px;
-            margin-bottom: 40px;
-            background: #189a5a;
-            color: white;
-            position: relative;
-        }
-
-        .garisFullTebal {
-            border-top: 9px solid #189a5a;
-            width: 130%; 
-            display: flex;
-            margin-bottom: 20px;
-        }
- 
-        .logoWebsite {
-            background-image: url('./gambar/website.png'); 
-            background-repeat: no-repeat;
-            background-size: contain; 
-            display: inline-block;
-            padding-left: 5px; 
-            width: 100%;
-            height: 70%;
-        }
-
-        .textFooter {
-            margin-top: 2px;
-            margin-left: 5px;
-            font-size: 16px;
-            display: flex;
-            text-decoration: none;
-            display: inline-block;
-            color: #0cb361;
-            font-weight: 400;
-        }
-
-        .logoFacebook {
-            background-image: url('./gambar/facebook.png'); 
-            background-repeat: no-repeat;
-            background-size: contain; 
-            display: inline-block;
-            padding-left: 5px; 
-            width: 100%;
-            height: 70%;
-        }
-
-        .logoTwitter {
-            background-image: url('./gambar/twitter.png'); 
-            background-repeat: no-repeat;
-            background-size: contain; 
-            display: inline-block;
-            padding-left: 5px; 
-            width: 100%;
-            height: 70%;
-        }
-
-        .logoInstagram {
-            background-image: url('./gambar/instagram.png'); 
-            background-repeat: no-repeat;
-            background-size: contain; 
-            display: inline-block;
-            padding-left: 5px; 
-            width: 100%;
-            height: 70%;
-        }
-
-        .logoYoutube {
-            background-image: url('./gambar/youtube.png'); 
-            background-repeat: no-repeat;
-            background-size: contain; 
-            display: inline-block;
-            padding-left: 5px; 
-            width: 100%;
-            height: 70%;
-        }
-        
-    </style>
 </head>
 <body>
 
 <!----------------------------------------MANULIFE dan FACT SHEET------------------------------------->
-<div class="container text-center">
+<div class="container">
     <div class="row">
         <div class="col-md-8 navMenu">
             <span class="logoManulife">Manulife<p class="garisPemisah"></p></span>
@@ -634,7 +40,7 @@
 
 
 <!------------------------------TUJUAN INVESTASI dan KLASIFIKASI RISIKO------------------------------->
-      <div class="container text-center">
+      <div class="container">
         <div class="row">
             <div class="col-md-6">
                 <div class="tujuanInvest"></div>
@@ -841,7 +247,7 @@
     <p class="kinerjaDana"></p>
     <p class="garisFull">
 
-    <div class="container text-center">
+    <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <table class="tableKinerja ">
@@ -934,7 +340,7 @@
 <p class="textKepemilikan"></p>
     <p class="garisFull">
     
-<div class="container text-center">
+<div class="container">
     <div class="row">
         <div class="col-md-3">
             <p class="textKepemilikan1"></p>
@@ -958,7 +364,7 @@
 <p class="ulasanManajer"></p>
     <p class="garisFull">
     
-<div class="container text-center">
+<div class="container">
     <div class="row">
         <div class="col-md-12">
             <p class="textUlasan"></p>
@@ -968,14 +374,35 @@
 <!------------------------------------------Sanggahan------------------------------------------------->
 <p class="garisFull">
     
-<div class="container text-center">
+<div class="container">
     <div class="row">
         <div class="col-md-12">
-            <p class="textSanggahan"></p>
-            <p class="backgroundManulife"></p>
-            <p class="textManulife"></p>
+            <div class="bungkus">
+            <p class="textAwalSanggahan">
+                <p class="textSanggahan"></p>
+            </p>
         </div>
+            <p class="backgroundManulife"></p>
+            <!-- <p class="textManulife"></p> -->
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 bgManulife">
+                    <span class="textManulife">
+                    </span>
+                </div>
+            </div>
+        </div>
+
+     
 <!------------------------------------------Sanggahan------------------------------------------------->
+
+
+
+
 
 <p class="garisFullTebal">
 <div class="row">
@@ -997,231 +424,10 @@
     </div>
   </div>
 
-
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-<script>
-    // Load the JSON file
-    fetch('data.json')
-        .then(response => response.json())
-        .then(data => {
-            // Access the 'tujuan' and 'risiko' values from the JSON
-            const manulifeDana = data.judul;
-            const tgl = data.tanggal;
-            const judulTujuan = data.tujuanJudul;
-            const tujuan = data.tujuanText;
-            const judulKlasi = data.risikoJudul;
-            const risiko = data.risikoText;
-
-            const informasiDana = data.informasiDana;
-            const kolomKiri = informasiDana.kolomKiri;
-            const kolomKanan = informasiDana.kolomKanan;
-
-            const alokasiDana = data.alokasi;
-            const kolomKiri1 = alokasiDana.kolomKiri;
-            const kolomKanan1 = alokasiDana.kolomKanan;
-
-            const porto = data.portofolio;
-            const kolomKiri2 = porto.kolomKiri;
-            const kolomKanan2 = porto.kolomKanan;
-
-            const ket = data.keterangan;
-            const ketText = ket.keteranganText;
-
-            const sejak = data.kinerjaAwal;
-            const judulSejak = sejak.judul;
-
-            const bulanan = data.kinerjaBulanan;
-            const judulBulanan = bulanan.judul;
-
-            const dana = data.kinerjaDana;
-            const judulDana = dana.judul;
-            const tabelJudul = dana.judulTabel;
-            const time = dana.waktu;
-            const row1 = dana.baris1;
-            const row2 = dana.baris2;
-
-            const dana1 = data.kinerjaTahunan;
-            const judulDana1 = dana1.judul;
-            const time1 = dana1.bulan;
-            const row3 = dana1.baris1;
-            const row4 = dana1.baris2;
-
-            const milik = data.kepemilikan;
-            const title = milik.judul;
-            const nonAfil = milik.nonAfiliasi;
-            const seri = milik.sbsnSeri;
-            const donatKet = milik.ketDonat;
-            const donatData = milik.dataDonat;
-
-            const review = data.ulasan;
-            const ulasan2 = review.ulasanManulife; 
-
-
- 
-
-            // Select the HTML elements by their class names and set their innerHTML to the values from the JSON
-            document.querySelector('.manuDana').innerHTML = manulifeDana;
-            document.querySelector('.des2023').innerHTML = tgl;
-            document.querySelector('.tujuanInvest').innerHTML = judulTujuan;
-            document.querySelector('.tujuanText').innerHTML = tujuan;
-            document.querySelector('.klasiRisiko').innerHTML = judulKlasi;
-            document.querySelector('.risikoText').innerHTML = risiko;
-
-            document.querySelector('.tujuanInvest.infoDana').innerHTML = informasiDana.judul;
-            document.querySelector('.infoKolom1.tujuan').innerHTML = kolomKiri.satu;
-            document.querySelector('.infoKolom1.harga').innerHTML = kolomKiri.dua;
-            document.querySelector('.infoKolom1.dana').innerHTML = kolomKiri.tiga;
-            document.querySelector('.infoKolom1.unit').innerHTML = kolomKiri.empat;
-            document.querySelector('.infoKolom1.nilai').innerHTML = kolomKiri.lima;
-            document.querySelector('.infoKolom1.mata').innerHTML = kolomKiri.enam;
-            document.querySelector('.infoKolom1.jenis').innerHTML = kolomKiri.tujuh;
-            document.querySelector('.infoKolom1.valuasi').innerHTML = kolomKiri.delapan;
-            document.querySelector('.infoKolom1.kustodian').innerHTML = kolomKiri.sembilan;
-            document.querySelector('.infoKolom1.jasa').innerHTML = kolomKiri.sepuluh;
-            document.querySelector('.infoKolom1.kode').innerHTML = kolomKiri.sebelas;
-            document.querySelector('.infoKolom1.manajer').innerHTML = kolomKiri.duabelas;
-
-            document.querySelector('.infoKolom3.satu').innerHTML = kolomKanan.satu;
-            document.querySelector('.infoKolom3.dua').innerHTML = kolomKanan.dua;
-            document.querySelector('.infoKolom3.tiga').innerHTML = kolomKanan.tiga;
-            document.querySelector('.infoKolom3.empat').innerHTML = kolomKanan.empat;
-            document.querySelector('.infoKolom3.lima').innerHTML = kolomKanan.lima;
-            document.querySelector('.infoKolom3.enam').innerHTML = kolomKanan.enam;
-            document.querySelector('.infoKolom3.tujuh').innerHTML = kolomKanan.tujuh;
-            document.querySelector('.infoKolom3.delapan').innerHTML = kolomKanan.delapan;
-            document.querySelector('.infoKolom3.sembilan').innerHTML = kolomKanan.sembilan;
-            document.querySelector('.infoKolom3.sepuluh').innerHTML = kolomKanan.sepuluh;
-            document.querySelector('.infoKolom3.sebelas').innerHTML = kolomKanan.sebelas;
-            document.querySelector('.infoKolom3.duabelas').innerHTML = kolomKanan.duabelas;
-            
-            document.querySelector('.judulAlo').innerHTML = alokasiDana.judul;
-            document.querySelector('.alokasi2 .infoKolom1.satu').innerHTML = kolomKiri1.satu;
-            document.querySelector('.alokasi2 .infoKolom1.dua').innerHTML = kolomKiri1.dua;
-            document.querySelector('.alokasi2 .infoKolom1.tiga').innerHTML = kolomKiri1.tiga;
-
-            document.querySelector('.alokasi2 .infoKolom3.satu').innerHTML = kolomKanan1.saham;
-            document.querySelector('.alokasi2 .infoKolom3.dua').innerHTML = kolomKanan1.obligasi;
-            document.querySelector('.alokasi2 .infoKolom3.tiga').innerHTML = kolomKanan1.pasar;
-
-            document.querySelector('.judulPorto').innerHTML = porto.judul;
-            document.querySelector('.tabelPortofolio .infoKolom1.satu').innerHTML = kolomKiri2.satu;
-            document.querySelector('.tabelPortofolio .infoKolom1.dua').innerHTML = kolomKiri2.dua;
-            document.querySelector('.tabelPortofolio .infoKolom1.tiga').innerHTML = kolomKiri2.tiga;
-            document.querySelector('.tabelPortofolio .infoKolom1.empat').innerHTML = kolomKiri2.empat;
-
-            document.querySelector('.tabelPortofolio .infoKolom3.satu').innerHTML = kolomKanan2.satu;
-            document.querySelector('.tabelPortofolio .infoKolom3.dua').innerHTML = kolomKanan2.dua;
-            document.querySelector('.tabelPortofolio .infoKolom3.tiga').innerHTML = kolomKanan2.tiga;
-            document.querySelector('.tabelPortofolio .infoKolom3.empat').innerHTML = kolomKanan2.empat;
-
-            document.querySelector('.keterangan').innerHTML = ket.judul;
-
-            const joinedText = Object.values(ketText).join('<br>');
-            document.querySelector('.pketerangan').innerHTML = joinedText;
-
-            document.querySelector('.kinerjaSejak').innerHTML = judulSejak;
-
-            document.querySelector('.kinerjaBulanan').innerHTML = judulBulanan;
-
-            document.querySelector('.kinerjaDana').innerHTML = judulDana;
-            document.querySelector('.judulKolom').innerHTML = tabelJudul;
-            document.querySelector('.kinerjaKolom1').innerHTML = time.satu;
-            document.querySelector('.kinerjaKolom2').innerHTML = time.dua;
-            document.querySelector('.kinerjaKolom3').innerHTML = time.tiga;
-            document.querySelector('.kinerjaKolom4').innerHTML = time.empat;
-            document.querySelector('.kinerjaKolom5').innerHTML = time.lima;
-            document.querySelector('.kinerjaKolom6').innerHTML = time.enam;
-            document.querySelector('.kinerjaKolom7').innerHTML = time.tujuh;
-            document.querySelector('.kinerjaKolom8').innerHTML = time.delapan;
-            document.querySelector('.kinerjaKolom9').innerHTML = row1.satu;
-            document.querySelector('.kinerjaKolom10').innerHTML = row1.dua;
-            document.querySelector('.kinerjaKolom11').innerHTML = row1.tiga;
-            document.querySelector('.kinerjaKolom12').innerHTML = row1.empat;
-            document.querySelector('.kinerjaKolom13').innerHTML = row1.lima;
-            document.querySelector('.kinerjaKolom14').innerHTML = row1.enam;
-            document.querySelector('.kinerjaKolom15').innerHTML = row1.tujuh;
-            document.querySelector('.kinerjaKolom16').innerHTML = row1.delapan;
-            document.querySelector('.kinerjaKolom17').innerHTML = row1.sembilan;
-            document.querySelector('.kinerjaKolom18').innerHTML = row2.satu;
-            document.querySelector('.kinerjaKolom19').innerHTML = row2.dua;
-            document.querySelector('.kinerjaKolom20').innerHTML = row2.tiga;
-            document.querySelector('.kinerjaKolom21').innerHTML = row2.empat;
-            document.querySelector('.kinerjaKolom22').innerHTML = row2.lima;
-            document.querySelector('.kinerjaKolom23').innerHTML = row2.enam;
-            document.querySelector('.kinerjaKolom24').innerHTML = row2.tujuh;
-            document.querySelector('.kinerjaKolom25').innerHTML = row2.delapan;
-            document.querySelector('.kinerjaKolom26').innerHTML = row2.sembilan;
-
-            document.querySelector('.tableTahunan .judulKolom').innerHTML = judulDana1;
-            document.querySelector('.tableTahunan .kinerjaKolom1').innerHTML = time1.satu;
-            document.querySelector('.tableTahunan .kinerjaKolom2').innerHTML = time1.dua;
-            document.querySelector('.tableTahunan .kinerjaKolom3').innerHTML = time1.tiga;
-            document.querySelector('.tableTahunan .kinerjaKolom4').innerHTML = time1.empat;
-            document.querySelector('.tableTahunan .kinerjaKolom5').innerHTML = time1.lima;
-            document.querySelector('.tableTahunan .kinerjaKolom6').innerHTML = time1.enam;
-            document.querySelector('.tableTahunan .kinerjaKolom7').innerHTML = time1.tujuh;
-            document.querySelector('.tableTahunan .kinerjaKolom8').innerHTML = time1.delapan;
-            document.querySelector('.tableTahunan .kinerjaKolom9').innerHTML = row3.satu;
-            document.querySelector('.tableTahunan .kinerjaKolom10').innerHTML = row3.dua;
-            document.querySelector('.tableTahunan .kinerjaKolom11').innerHTML = row3.tiga;
-            document.querySelector('.tableTahunan .kinerjaKolom12').innerHTML = row3.empat;
-            document.querySelector('.tableTahunan .kinerjaKolom13').innerHTML = row3.lima;
-            document.querySelector('.tableTahunan .kinerjaKolom14').innerHTML = row3.enam;
-            document.querySelector('.tableTahunan .kinerjaKolom15').innerHTML = row3.tujuh;
-            document.querySelector('.tableTahunan .kinerjaKolom16').innerHTML = row3.delapan;
-            document.querySelector('.tableTahunan .kinerjaKolom17').innerHTML = row3.sembilan;
-            document.querySelector('.tableTahunan .kinerjaKolom18').innerHTML = row4.satu;
-            document.querySelector('.tableTahunan .kinerjaKolom19').innerHTML = row4.dua;
-            document.querySelector('.tableTahunan .kinerjaKolom20').innerHTML = row4.tiga;
-            document.querySelector('.tableTahunan .kinerjaKolom21').innerHTML = row4.empat;
-            document.querySelector('.tableTahunan .kinerjaKolom22').innerHTML = row4.lima;
-            document.querySelector('.tableTahunan .kinerjaKolom23').innerHTML = row4.enam;
-            document.querySelector('.tableTahunan .kinerjaKolom24').innerHTML = row4.tujuh;
-            document.querySelector('.tableTahunan .kinerjaKolom25').innerHTML = row4.delapan;
-            document.querySelector('.tableTahunan .kinerjaKolom26').innerHTML = row4.sembilan;
-
-            document.querySelector('.textKepemilikan').innerHTML = title;
-            const joinKepemilikan1 = Object.values(nonAfil).join('<br>');
-            document.querySelector('.textKepemilikan1').innerHTML = joinKepemilikan1;
-            const joinKepemilikan2 = Object.values(seri).join('<br>');
-            document.querySelector('.textKepemilikan2').innerHTML = joinKepemilikan2;
-
-            const joinKepemilikan4 = Object.entries(donatKet).map(([key, value]) => {
-            const percentage = donatData[key];
-            return `${percentage}% ${value}`;
-            }).join('<br>');
-
-            document.querySelector('.textKepemilikan4').innerHTML = joinKepemilikan4;
-
-
-            document.querySelector('.ulasanManajer').innerHTML = review.judul;
-            document.querySelector('.textUlasan').innerHTML = review.keterangan;
-            document.querySelector('.textSanggahan').innerHTML = review.sanggahan;
-            const joinUlasan = Object.values(ulasan2).join('<br>');
-            document.querySelector('.textManulife').innerHTML = joinUlasan;
-
-
-
-
-            
-
-
-
-
-            
-
-
-        
-
-
-
-        })
-        .catch(error => console.error('Error loading JSON:', error));
-</script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="script.js"></script>
+<script src="scriptBar.js"></script>
 <script src="scriptLine.js"></script>
 <script src="scriptPie.js"></script>
 </body>
